@@ -14,4 +14,8 @@
 
 #pragma mark - Методы VSMPLchild2RouterInput
 
+- (void)openParentView {
+    [self.transitionHandler openModuleUsingSegue:@"child2ToParent"];
+}
+
 @end

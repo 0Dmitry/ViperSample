@@ -16,7 +16,6 @@
 		6A655F9A6B4F60687947CBD6 /* VSMPLparentAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F67ACDF94A4D83C4B66ED6 /* VSMPLparentAssembly.m */; };
 		7AFAB453CE26058E0FFD5783 /* VSMPLchild2Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA9EA85B2505324C6E8361 /* VSMPLchild2Router.m */; };
 		8421CB43200F6F5F00F7470A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421CB42200F6F5F00F7470A /* AppDelegate.m */; };
-		8421CB46200F6F5F00F7470A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421CB45200F6F5F00F7470A /* ViewController.m */; };
 		8421CB49200F6F5F00F7470A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8421CB47200F6F5F00F7470A /* Main.storyboard */; };
 		8421CB4B200F6F5F00F7470A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8421CB4A200F6F5F00F7470A /* Assets.xcassets */; };
 		8421CB4E200F6F5F00F7470A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8421CB4C200F6F5F00F7470A /* LaunchScreen.storyboard */; };
@@ -60,8 +59,6 @@
 		8421CB3E200F6F5F00F7470A /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8421CB41200F6F5F00F7470A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8421CB42200F6F5F00F7470A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8421CB44200F6F5F00F7470A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8421CB45200F6F5F00F7470A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8421CB48200F6F5F00F7470A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8421CB4A200F6F5F00F7470A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8421CB4D200F6F5F00F7470A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -267,8 +264,6 @@
 			children = (
 				8421CB41200F6F5F00F7470A /* AppDelegate.h */,
 				8421CB42200F6F5F00F7470A /* AppDelegate.m */,
-				8421CB44200F6F5F00F7470A /* ViewController.h */,
-				8421CB45200F6F5F00F7470A /* ViewController.m */,
 				8421CB47200F6F5F00F7470A /* Main.storyboard */,
 				8421CB4A200F6F5F00F7470A /* Assets.xcassets */,
 				8421CB4C200F6F5F00F7470A /* LaunchScreen.storyboard */,
@@ -483,7 +478,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8421CB46200F6F5F00F7470A /* ViewController.m in Sources */,
 				8421CB51200F6F5F00F7470A /* main.m in Sources */,
 				8421CB43200F6F5F00F7470A /* AppDelegate.m in Sources */,
 				6A655F9A6B4F60687947CBD6 /* VSMPLparentAssembly.m in Sources */,

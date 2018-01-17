@@ -27,6 +27,7 @@
 }
 
 - (IBAction)backButtonTapped:(id)sender {
+    [self.output backButtonTapped];
 }
 
 @end

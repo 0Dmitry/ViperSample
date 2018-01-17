@@ -10,4 +10,6 @@
 
 @protocol VSMPLchild2RouterInput <NSObject>
 
+-(void) openParentView;
+
 @end

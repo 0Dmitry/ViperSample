@@ -26,6 +26,10 @@
 	[self.view setupInitialState];
 }
 
+-(void)backButtonTapped {
+    [self.router openParentView];
+}
+
 #pragma mark - Методы VSMPLchild2InteractorOutput
 
 @end
