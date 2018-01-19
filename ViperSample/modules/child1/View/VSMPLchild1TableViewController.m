@@ -40,7 +40,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"NewsTableCell" forIndexPath:indexPath];
     
-    VSMPLNews * news = [self.tableDatasource getNewsForRow:indexPath.row];
+    id<VSMPLNews> news = [self.tableDatasource getNewsForRow:indexPath.row];
     
     [self.tableCellDecorator decorateCell:cell withNews:news];
     

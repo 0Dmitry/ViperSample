@@ -6,9 +6,9 @@
 //  Copyright © 2018 Dmitry Klochkov. All rights reserved.
 //
 
-#import "VSMPLNews.h"
+#import "VSMPLDefaultNews.h"
 
-@implementation VSMPLNews
+@implementation VSMPLDefaultNews
 
 -(id)initWithNewsId:(NSInteger)newsId title:(NSString *)title text:(NSString *)text date:(NSDate *)date {
     if (self = [super init]) {

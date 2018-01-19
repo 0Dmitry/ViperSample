@@ -11,6 +11,6 @@
 
 @protocol VSMPLNewsTableCellDecorator<NSObject>
 
--(void) decorateCell:(UITableViewCell *) cell withNews:(VSMPLNews *) news;
+-(void) decorateCell:(UITableViewCell *) cell withNews:(id<VSMPLNews>) news;
 
 @end

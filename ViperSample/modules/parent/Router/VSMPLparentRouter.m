@@ -9,6 +9,7 @@
 #import "VSMPLparentRouter.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
+#import <UIKit/UIKit.h>
 
 @implementation VSMPLparentRouter
 
@@ -21,6 +22,16 @@
 
 -(void)openChild2View {
      [self.transitionHandler openModuleUsingSegue:@"parentToChild2"];
+}
+
+- (void)openChild1ViewFromParentViewController:(UIViewController *)parentViewController {
+    UIViewController * viewController = [[UIStoryboard storyboardWithName:@"UnreadNews" bundle:nil] instantiateInitialViewController];
+    [parentViewController.navigationController pushViewController:viewController animated:YES];
+}
+
+- (void)openChild2ViewFromParentViewController:(UIViewController *)parentViewController {
+    UIViewController * viewController = [[UIStoryboard storyboardWithName:@"ReadNews" bundle:nil] instantiateInitialViewController];
+    [parentViewController.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

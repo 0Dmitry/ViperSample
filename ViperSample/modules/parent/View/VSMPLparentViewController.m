@@ -28,11 +28,11 @@
 
 
 - (IBAction)child1ButtonTapped:(id)sender {
-    [self.output child1buttonTapped];
+    [self.output child1buttonTappedOnViewController:self];
 }
 
 - (IBAction)child2ButtonTapped:(id)sender {
-    [self.output child2buttonTapped];
+    [self.output child2buttonTappedOnViewController:self];
 }
 
 

@@ -36,14 +36,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSP-xV-vjw">
                                 <rect key="frame" x="0.0" y="64" width="375" height="30"/>
-                                <state key="normal" title="News"/>
+                                <state key="normal" title="Unread News"/>
                                 <connections>
                                     <action selector="child1ButtonTapped:" destination="zpm-0p-qYB" eventType="touchUpInside" id="JaN-eP-L6K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-fX-1cJ">
                                 <rect key="frame" x="0.0" y="102" width="375" height="30"/>
-                                <state key="normal" title="Child2"/>
+                                <state key="normal" title="Read News"/>
                                 <connections>
                                     <action selector="child2ButtonTapped:" destination="zpm-0p-qYB" eventType="touchUpInside" id="9ej-EA-qpm"/>
                                 </connections>
@@ -61,30 +61,10 @@
                         <viewLayoutGuide key="safeArea" id="tJ8-BZ-yE9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="3qi-Fm-YRn"/>
-                    <connections>
-                        <segue destination="UUH-xm-dRb" kind="show" identifier="parentToChild1" id="bRA-3U-uu8"/>
-                        <segue destination="ih5-xT-sat" kind="show" identifier="parentToChild2" id="GQa-16-NrN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JB-uG-CCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-154.40000000000001" y="-179.46026986506749"/>
-        </scene>
-        <!--Child1-->
-        <scene sceneID="9pr-yN-Sx3">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Child1" id="UUH-xm-dRb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8l9-w3-x6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="542" y="-237"/>
-        </scene>
-        <!--Child2-->
-        <scene sceneID="2kN-Qz-dzk">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Child2" id="ih5-xT-sat" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nOW-p9-oDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="541" y="-143"/>
         </scene>
     </scenes>
 </document>

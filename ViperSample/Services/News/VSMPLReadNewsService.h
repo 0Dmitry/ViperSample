@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "VSMPLNewsTableDataSource.h"
 
-@interface VSMPLNewsService : NSObject<VSMPLNewsTableDataSource>
+@interface VSMPLReadNewsService : NSObject<VSMPLNewsTableDataSource>
 
 @end

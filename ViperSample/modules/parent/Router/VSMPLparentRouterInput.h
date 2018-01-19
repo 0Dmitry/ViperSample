@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol VSMPLparentRouterInput <NSObject>
 
--(void) openChild1View;
--(void) openChild2View;
+-(void) openChild1ViewFromParentViewController:(UIViewController *) parentViewController;
+-(void) openChild2ViewFromParentViewController:(UIViewController *) parentViewController;
 
 @end

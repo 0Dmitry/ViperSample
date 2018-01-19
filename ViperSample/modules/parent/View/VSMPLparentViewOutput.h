@@ -6,7 +6,7 @@
 //  Copyright © 2018 dmitryklochkov. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol VSMPLparentViewOutput <NSObject>
 
@@ -17,7 +17,7 @@
  */
 - (void)didTriggerViewReadyEvent;
 
--(void) child1buttonTapped;
--(void) child2buttonTapped;
+-(void) child1buttonTappedOnViewController: (UIViewController *) viewController;
+-(void) child2buttonTappedOnViewController: (UIViewController *) viewController;
 
 @end

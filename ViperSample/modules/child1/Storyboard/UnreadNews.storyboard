@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News-->
+        <!--Unread News-->
         <scene sceneID="c5t-0Q-Ej9">
             <objects>
-                <tableViewController title="News" id="fvV-3U-zUg" customClass="VSMPLchild1TableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="UnreadNews" title="Unread News" id="fvV-3U-zUg" customClass="VSMPLchild1TableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dFu-4w-hbY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,6 +32,9 @@
                             <outlet property="delegate" destination="fvV-3U-zUg" id="AI9-T5-O7u"/>
                         </connections>
                     </tableView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="typhoonKey" value="unreadNewsView"/>
+                    </userDefinedRuntimeAttributes>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bm-Ni-c1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

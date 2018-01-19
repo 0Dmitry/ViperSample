@@ -12,5 +12,5 @@
 
 @protocol VSMPLNewsTableDataSource <NSObject>
 - (NSInteger) newsCount;
-- (VSMPLNews *) getNewsForRow:(NSInteger)row;
+- (id<VSMPLNews>) getNewsForRow:(NSInteger)row;
 @end

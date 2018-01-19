@@ -26,12 +26,12 @@
 	[self.view setupInitialState];
 }
 
--(void)child1buttonTapped {
-    [self.router openChild1View];
+-(void) child1buttonTappedOnViewController: (UIViewController *) viewController {
+    [self.router openChild1ViewFromParentViewController: viewController];
 }
 
--(void)child2buttonTapped {
-    [self.router openChild2View];
+-(void) child2buttonTappedOnViewController: (UIViewController *) viewController {
+    [self.router openChild2ViewFromParentViewController:viewController];
 }
 
 #pragma mark - Методы VSMPLparentInteractorOutput

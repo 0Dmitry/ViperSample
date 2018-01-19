@@ -10,7 +10,7 @@
 
 @implementation VSMPLDefaultNewsTableCellDecorator
 
-- (void)decorateCell:(UITableViewCell *)cell withNews:(VSMPLNews *)news {
+- (void)decorateCell:(UITableViewCell *)cell withNews:(id<VSMPLNews>)news {
     cell.textLabel.text = news.title;
 }
 
