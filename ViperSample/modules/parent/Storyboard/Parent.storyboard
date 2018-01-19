@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nPG-yE-qeQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uLs-zN-cgu">
+            <objects>
+                <navigationController id="nPG-yE-qeQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tVP-Mz-cgF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zpm-0p-qYB" kind="relationship" relationship="rootViewController" id="aoF-sJ-A1E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SL7-gw-VAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-950" y="-179"/>
+        </scene>
+        <!--Parent-->
+        <scene sceneID="dh5-mH-y0x">
+            <objects>
+                <viewController title="Parent" id="zpm-0p-qYB" customClass="VSMPLparentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GgV-0v-siJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSP-xV-vjw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <state key="normal" title="News"/>
+                                <connections>
+                                    <action selector="child1ButtonTapped:" destination="zpm-0p-qYB" eventType="touchUpInside" id="JaN-eP-L6K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-fX-1cJ">
+                                <rect key="frame" x="0.0" y="102" width="375" height="30"/>
+                                <state key="normal" title="Child2"/>
+                                <connections>
+                                    <action selector="child2ButtonTapped:" destination="zpm-0p-qYB" eventType="touchUpInside" id="9ej-EA-qpm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XSP-xV-vjw" firstAttribute="trailing" secondItem="wL8-fX-1cJ" secondAttribute="trailing" id="4FE-bM-yGm"/>
+                            <constraint firstItem="XSP-xV-vjw" firstAttribute="top" secondItem="tJ8-BZ-yE9" secondAttribute="top" id="I3l-u2-sjn"/>
+                            <constraint firstItem="wL8-fX-1cJ" firstAttribute="top" secondItem="XSP-xV-vjw" secondAttribute="bottom" constant="8" symbolic="YES" id="LpZ-Lo-ueg"/>
+                            <constraint firstItem="XSP-xV-vjw" firstAttribute="leading" secondItem="wL8-fX-1cJ" secondAttribute="leading" id="NXd-F3-aSo"/>
+                            <constraint firstAttribute="trailing" secondItem="XSP-xV-vjw" secondAttribute="trailing" id="Y5x-2v-jdD"/>
+                            <constraint firstItem="XSP-xV-vjw" firstAttribute="leading" secondItem="GgV-0v-siJ" secondAttribute="leading" id="Zxe-K8-0Yt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tJ8-BZ-yE9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="3qi-Fm-YRn"/>
+                    <connections>
+                        <segue destination="UUH-xm-dRb" kind="show" identifier="parentToChild1" id="bRA-3U-uu8"/>
+                        <segue destination="ih5-xT-sat" kind="show" identifier="parentToChild2" id="GQa-16-NrN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9JB-uG-CCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154.40000000000001" y="-179.46026986506749"/>
+        </scene>
+        <!--Child1-->
+        <scene sceneID="9pr-yN-Sx3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Child1" id="UUH-xm-dRb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8l9-w3-x6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="-237"/>
+        </scene>
+        <!--Child2-->
+        <scene sceneID="2kN-Qz-dzk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Child2" id="ih5-xT-sat" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOW-p9-oDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541" y="-143"/>
+        </scene>
+    </scenes>
+</document>

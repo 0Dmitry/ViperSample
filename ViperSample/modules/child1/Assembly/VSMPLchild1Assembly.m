@@ -8,22 +8,28 @@
 
 #import "VSMPLchild1Assembly.h"
 
-#import "VSMPLchild1ViewController.h"
+#import "VSMPLchild1TableViewController.h"
 #import "VSMPLchild1Interactor.h"
 #import "VSMPLchild1Presenter.h"
 #import "VSMPLchild1Router.h"
+#import "VSMPLNewsTableDataSource.h"
+#import "VSMPLNewsService.h"
+#import "VSMPLNewsTableCellDecorator.h"
+#import "VSMPLDefaultNewsTableCellDecorator.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
 @implementation VSMPLchild1Assembly
 
-- (VSMPLchild1ViewController *)viewchild1 {
-    return [TyphoonDefinition withClass:[VSMPLchild1ViewController class]
+- (VSMPLchild1TableViewController *)viewchild1 {
+    return [TyphoonDefinition withClass:[VSMPLchild1TableViewController class]
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterchild1]];
                               [definition injectProperty:@selector(moduleInput)
                                                     with:[self presenterchild1]];
+                              [definition injectProperty:@selector(tableDatasource) with:[self newsDataSource]];
+                              [definition injectProperty:@selector(tableCellDecorator) with:[self defaultNewsTableCellDecorator]];
                           }];
 }
 
@@ -53,6 +59,14 @@
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewchild1]];
                           }];
+}
+
+-(id<VSMPLNewsTableDataSource>) newsDataSource {
+    return [TyphoonDefinition withClass:[VSMPLNewsService class]];
+}
+
+-(id<VSMPLNewsTableCellDecorator>) defaultNewsTableCellDecorator {
+    return [TyphoonDefinition withClass:[VSMPLDefaultNewsTableCellDecorator class]];
 }
 
 @end
