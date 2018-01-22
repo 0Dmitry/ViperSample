@@ -20,4 +20,19 @@
     return self;
 }
 
++ (nonnull EKObjectMapping *)objectMapping {
+    return [EKObjectMapping mappingForClass:self withBlock:^(EKObjectMapping * _Nonnull mapping) {
+        [mapping mapPropertiesFromDictionary:@{
+                                               @"id": @"newsId"
+        }];
+        
+        [mapping mapPropertiesFromArray:@[@"title", @"isRead", @"text"]];
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        [mapping mapKeyPath:@"date" toProperty:@"date" withDateFormatter:dateFormatter];
+    }];
+}
+
 @end

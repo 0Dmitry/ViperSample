@@ -13,8 +13,7 @@
 #import "VSMPLchild1Presenter.h"
 #import "VSMPLchild1Router.h"
 #import "VSMPLNewsTableDataSource.h"
-#import "VSMPLUnreadNewsService.h"
-#import "VSMPLReadNewsService.h"
+#import "VSMPLNewsDataSource.h"
 #import "VSMPLNewsTableCellDecorator.h"
 #import "VSMPLDefaultNewsTableCellDecorator.h"
 
@@ -76,15 +75,32 @@
 }
 
 -(id<VSMPLNewsTableDataSource>) unreadNewsDataSource {
-    return [TyphoonDefinition withClass:[VSMPLUnreadNewsService class]];
+    return [TyphoonDefinition withClass:[VSMPLNewsDataSource class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(newsManager) with:[self newsManager]];
+        
+        VSMPLNewsFilter * filter = [[VSMPLNewsFilter alloc] initWithIsRead:@(NO)];
+        [definition injectProperty:@selector(filter) with: filter];
+    }];
 }
 
 -(id<VSMPLNewsTableDataSource>) readNewsDataSource {
-    return [TyphoonDefinition withClass:[VSMPLReadNewsService class]];
+    return [TyphoonDefinition withClass:[VSMPLNewsDataSource class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(newsManager) with:[self newsManager]];
+        
+        VSMPLNewsFilter * filter = [[VSMPLNewsFilter alloc] initWithIsRead:@(YES)];
+        [definition injectProperty:@selector(filter) with: filter];
+    }];
 }
 
 -(id<VSMPLNewsTableCellDecorator>) defaultNewsTableCellDecorator {
     return [TyphoonDefinition withClass:[VSMPLDefaultNewsTableCellDecorator class]];
+}
+
+-(VSMPLNewsManager *) newsManager {
+    return [TyphoonDefinition withClass:[VSMPLNewsManager class] configuration:^(TyphoonDefinition *definition) {
+        definition.scope = TyphoonScopeSingleton;
+        
+    }];
 }
 
 @end

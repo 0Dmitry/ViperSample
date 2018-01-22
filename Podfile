@@ -11,5 +11,6 @@ pod "ViperMcFlurry"
 pod "Typhoon"
 pod "OCMock"
 pod "RamblerTyphoonUtils/AssemblyCollector"
+pod 'EasyMapping', '~> 0.20'
 
 end

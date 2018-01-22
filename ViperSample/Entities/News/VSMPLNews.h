@@ -14,5 +14,6 @@
 @property(nonatomic,readonly,copy) NSString * title;
 @property(nonatomic,readonly,copy) NSString * text;
 @property(nonatomic, readonly,strong) NSDate * date;
+@property(nonatomic, readonly, assign) BOOL isRead;
 
 @end
