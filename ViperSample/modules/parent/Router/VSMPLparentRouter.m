@@ -16,16 +16,16 @@
 #pragma mark - Методы VSMPLparentRouterInput
 
 
--(void)openChild1View {
-    [self.transitionHandler openModuleUsingSegue:@"parentToChild1"];
-}
 
--(void)openChild2View {
-     [self.transitionHandler openModuleUsingSegue:@"parentToChild2"];
-}
+
+//- (void)openChild1ViewFromParentViewController:(UIViewController *)parentViewController {
+//    UIViewController * viewController = [[UIStoryboard storyboardWithName:@"UnreadNews" bundle:nil] instantiateInitialViewController];
+//    [parentViewController.navigationController pushViewController:viewController animated:YES];
+//}
 
 - (void)openChild1ViewFromParentViewController:(UIViewController *)parentViewController {
-    UIViewController * viewController = [[UIStoryboard storyboardWithName:@"UnreadNews" bundle:nil] instantiateInitialViewController];
+    UIViewController * viewController = [[UIStoryboard storyboardWithName:@"NewsStoryboard" bundle:nil] instantiateInitialViewController];
+    
     [parentViewController.navigationController pushViewController:viewController animated:YES];
 }
 

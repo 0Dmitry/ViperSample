@@ -23,6 +23,7 @@
 #pragma mark - Методы VSMPLchild1ViewOutput
 
 - (void)didTriggerViewReadyEvent {
+    
 	[self.view setupInitialState];
 }
 

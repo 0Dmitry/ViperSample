@@ -11,10 +11,10 @@ prefix: VSMPL
 project_target: ViperSample
 
 # The file path for new modules
-project_file_path: modules
+project_file_path: ViperSample/modules
 
 # The Xcode group path to new modules
-project_group_path: modules
+project_group_path: ViperSample/modules
 
 ### Dependencies settings section
 podfile_path: Podfile
