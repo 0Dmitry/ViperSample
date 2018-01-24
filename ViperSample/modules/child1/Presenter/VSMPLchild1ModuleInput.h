@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <ViperMcFlurry/ViperMcFlurry.h>
+#import "VSMPLNewsFilterDelegate.h"
 
-@protocol VSMPLchild1ModuleInput <RamblerViperModuleInput>
+@protocol VSMPLchild1ModuleInput <RamblerViperModuleInput, VSMPLNewsFilterDelegate>
 
 /**
  @author dmitry

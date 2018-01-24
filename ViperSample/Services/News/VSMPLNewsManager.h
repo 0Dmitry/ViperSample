@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "VSMPLNews.h"
-@class VSMPLNewsFilter;
+@protocol VSMPLNewsFilterProtocol;
 
 
 @interface VSMPLNewsManager : NSObject
 
--(NSInteger) getNewsCountWithFilter:(VSMPLNewsFilter *) filter;
--(id<VSMPLNews>) getNewsWithFilter:(VSMPLNewsFilter *) filter andRow:(NSInteger) row;
+-(NSInteger) getNewsCountWithFilter:(id<VSMPLNewsFilterProtocol>) filter;
+-(id<VSMPLNews>) getNewsWithFilter:(id<VSMPLNewsFilterProtocol>) filter andRow:(NSInteger) row;
 
 @end

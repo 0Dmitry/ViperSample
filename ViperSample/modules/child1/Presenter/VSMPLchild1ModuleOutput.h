@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <ViperMcFlurry/ViperMcFlurry.h>
+#import "VSMPLNewsListConfigurationProtocol.h"
+#import "VSMPLNewsFilterSource.h"
 
-@protocol VSMPLchild1ModuleOutput <RamblerViperModuleOutput>
-
+@protocol VSMPLchild1ModuleOutput <RamblerViperModuleOutput, VSMPLNewsListConfigurationProtocol, VSMPLNewsFilterSource>
 
 @end

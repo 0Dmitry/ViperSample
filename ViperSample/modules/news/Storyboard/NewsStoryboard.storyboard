@@ -33,7 +33,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mxb-Q5-2nR"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwy-zO-Nzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

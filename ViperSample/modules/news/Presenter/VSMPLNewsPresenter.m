@@ -26,6 +26,7 @@
 
 - (void)didTriggerViewReadyEvent {
     [self.router presentNewsFilterModule];
+    [self.router presentNewsListModule];
     
 	[self.view setupInitialState];
 }
@@ -36,6 +37,29 @@
 
 - (void)configureNewsFilterModuleView:(UIViewController *)view {
     [self.view configureNewsFilterModuleView:view];
+}
+
+- (void)configureNewsListModuleView:(UIViewController *)view {
+    [self.view configureNewsListModuleView:view];
+}
+
+-(id<VSMPLNewsFilterProtocol>)newsFilter {
+    return self.newsFilterModule.filter;
+}
+
+
+
+
+#pragma mark - Методы VSMPLNewsFilterProtocol
+
+@synthesize filter;
+
+-(id<VSMPLNewsFilterProtocol>)filter {
+    return newsFilterModule.filter;
+}
+
+-(void)newsFilterValuesDidChange {
+    [self.newsListModule newsFilterValuesDidChange];
 }
 
 @end

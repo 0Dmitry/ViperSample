@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSMPLNewsFilterProtocol.h"
 
-@protocol VSMPLNewsFilterViewInput <NSObject>
+@protocol VSMPLNewsFilterViewInput <NSObject, VSMPLNewsFilterProtocol>
 
 /**
  @author dmitry

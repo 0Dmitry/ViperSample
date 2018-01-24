@@ -18,7 +18,6 @@
 		735188405AE7D7AE965CCDC8 /* VSMPLNewsFilterInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438561034B15FC8B0E2EA17 /* VSMPLNewsFilterInteractor.m */; };
 		840752CB2015E14500015F1A /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 840752CA2015E14500015F1A /* news.json */; };
 		841E039F2015C1CD009F3252 /* VSMPLNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E039E2015C1CD009F3252 /* VSMPLNewsManager.m */; };
-		841E03A22015C2F6009F3252 /* VSMPLNewsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E03A12015C2F6009F3252 /* VSMPLNewsFilter.m */; };
 		8421CB43200F6F5F00F7470A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421CB42200F6F5F00F7470A /* AppDelegate.m */; };
 		8421CB4B200F6F5F00F7470A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8421CB4A200F6F5F00F7470A /* Assets.xcassets */; };
 		8421CB4E200F6F5F00F7470A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8421CB4C200F6F5F00F7470A /* LaunchScreen.storyboard */; };
@@ -87,8 +86,7 @@
 		840752CA2015E14500015F1A /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
 		841E039D2015C1CD009F3252 /* VSMPLNewsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsManager.h; sourceTree = "<group>"; };
 		841E039E2015C1CD009F3252 /* VSMPLNewsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsManager.m; sourceTree = "<group>"; };
-		841E03A02015C2F6009F3252 /* VSMPLNewsFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilter.h; sourceTree = "<group>"; };
-		841E03A12015C2F6009F3252 /* VSMPLNewsFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsFilter.m; sourceTree = "<group>"; };
+		841E03A02015C2F6009F3252 /* VSMPLNewsFilterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterProtocol.h; sourceTree = "<group>"; };
 		8421CB3E200F6F5F00F7470A /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8421CB41200F6F5F00F7470A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8421CB42200F6F5F00F7470A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,6 +100,7 @@
 		8431442E20122F3200940999 /* VSMPLDefaultNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMPLDefaultNews.h; sourceTree = "<group>"; };
 		8431442F20122F3200940999 /* VSMPLDefaultNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMPLDefaultNews.m; sourceTree = "<group>"; };
 		8431443020122F3200940999 /* VSMPLNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMPLNews.h; sourceTree = "<group>"; };
+		8435C1F720177F5600A65264 /* VSMPLNewsListConfigurationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsListConfigurationProtocol.h; sourceTree = "<group>"; };
 		845CD09F2011E9BA00614BCA /* VSMPLNewsTableCellDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableCellDecorator.h; sourceTree = "<group>"; };
 		845CD0A02011EC2B00614BCA /* VSMPLDefaultNewsTableCellDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLDefaultNewsTableCellDecorator.h; sourceTree = "<group>"; };
 		845CD0A12011EC2B00614BCA /* VSMPLDefaultNewsTableCellDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPLDefaultNewsTableCellDecorator.m; sourceTree = "<group>"; };
@@ -123,6 +122,8 @@
 		8485D6B82010C84A00B4F84F /* VSMPChild1TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPChild1TableViewCell.h; sourceTree = "<group>"; };
 		8485D6B92010C84A00B4F84F /* VSMPChild1TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPChild1TableViewCell.m; sourceTree = "<group>"; };
 		84973A9E2011C2D900AA301A /* VSMPLNewsTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableDataSource.h; sourceTree = "<group>"; };
+		84A1DAA22018AA3C002CDFB7 /* VSMPLNewsFilterSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterSource.h; sourceTree = "<group>"; };
+		84DE281A2018BA9400F5DFAE /* VSMPLNewsFilterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterDelegate.h; sourceTree = "<group>"; };
 		8660D0429C01AB78185633C0 /* VSMPLchild1RouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1RouterInput.h; sourceTree = "<group>"; };
 		8BB16817C6DF4718CE3E0EA5 /* VSMPLNewsFilterAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterAssembly.h; sourceTree = "<group>"; };
 		8C3B27A4846FFC71644C022D /* Pods-ViperSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -236,11 +237,13 @@
 		224ABC2D4852BA2FE6D6EB01 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				84A1DAA22018AA3C002CDFB7 /* VSMPLNewsFilterSource.h */,
 				5EE46BFC06891AB27A6A3C25 /* VSMPLNewsFilterModuleInput.h */,
 				6556EDE5C6B5E434B3705ADB /* VSMPLNewsFilterPresenter.h */,
 				F85D83E674BACC76D59F5B92 /* VSMPLNewsFilterPresenter.m */,
 				846BD3DC201737F500A4ED6A /* VSMPLNewsFilterModuleOutput.h */,
 				846BD3DE20174D7400A4ED6A /* VSMPLNewsFilterConfigurationProtocol.h */,
+				84DE281A2018BA9400F5DFAE /* VSMPLNewsFilterDelegate.h */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -479,8 +482,7 @@
 				8431442820122AC300940999 /* VSMPLNewsDataSource.m */,
 				841E039D2015C1CD009F3252 /* VSMPLNewsManager.h */,
 				841E039E2015C1CD009F3252 /* VSMPLNewsManager.m */,
-				841E03A02015C2F6009F3252 /* VSMPLNewsFilter.h */,
-				841E03A12015C2F6009F3252 /* VSMPLNewsFilter.m */,
+				841E03A02015C2F6009F3252 /* VSMPLNewsFilterProtocol.h */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -514,6 +516,7 @@
 				666D69778E189142A8448286 /* VSMPLchild1Presenter.h */,
 				0C93CE42D1041975CE879B47 /* VSMPLchild1Presenter.m */,
 				846BD3DD2017395E00A4ED6A /* VSMPLchild1ModuleOutput.h */,
+				8435C1F720177F5600A65264 /* VSMPLNewsListConfigurationProtocol.h */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -729,7 +732,6 @@
 				841E039F2015C1CD009F3252 /* VSMPLNewsManager.m in Sources */,
 				DC1FC7C82750AAFC7F912AFA /* VSMPLparentInteractor.m in Sources */,
 				BC971FD9859D595E4F928F94 /* VSMPLparentRouter.m in Sources */,
-				841E03A22015C2F6009F3252 /* VSMPLNewsFilter.m in Sources */,
 				BB480EA5FDB4094C9D0AC02E /* VSMPLchild1TableViewController.m in Sources */,
 				B2361181F032DFFECBB2BB5C /* VSMPLchild1Presenter.m in Sources */,
 				8485D6BA2010C84A00B4F84F /* VSMPChild1TableViewCell.m in Sources */,

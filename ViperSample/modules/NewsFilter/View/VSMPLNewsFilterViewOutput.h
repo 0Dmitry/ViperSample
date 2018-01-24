@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSMPLNewsFilterDelegate.h"
 
-@protocol VSMPLNewsFilterViewOutput <NSObject>
+@protocol VSMPLNewsFilterViewOutput <NSObject, VSMPLNewsFilterDelegate>
 
 /**
  @author dmitry
@@ -16,5 +17,6 @@
  Метод сообщает презентеру о том, что view готова к работе
  */
 - (void)didTriggerViewReadyEvent;
+
 
 @end

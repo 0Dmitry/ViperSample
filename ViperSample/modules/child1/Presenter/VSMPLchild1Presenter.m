@@ -31,6 +31,26 @@
     [self.router openParentView];
 }
 
+- (void)setModuleOutput:(id<VSMPLchild1ModuleOutput>)moduleOutput {
+    self.output = moduleOutput;
+    _newsDatasource.filterSource = self.output;
+    
+    [moduleOutput configureNewsListModuleView:(UIViewController *)self.view];
+}
+
 #pragma mark - Методы VSMPLchild1InteractorOutput
+
+- (void)newsFilterValuesDidChange {
+    [self.view newsFilterValuesDidChange];
+}
+
+
+@synthesize tableDatasource;
+
+- (id<VSMPLNewsTableDataSource>)tableDatasource {
+    return _newsDatasource;
+}
+
+
 
 @end

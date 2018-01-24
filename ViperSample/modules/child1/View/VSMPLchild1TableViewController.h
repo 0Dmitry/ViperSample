@@ -17,7 +17,6 @@
 @interface VSMPLchild1TableViewController : UITableViewController <VSMPLchild1ViewInput>
 
 @property (nonatomic, strong) id<VSMPLchild1ViewOutput> output;
-@property (nonatomic, strong) id<VSMPLNewsTableDataSource> tableDatasource;
 @property (nonatomic, strong) id<VSMPLNewsTableCellDecorator> tableCellDecorator;
 
 @end

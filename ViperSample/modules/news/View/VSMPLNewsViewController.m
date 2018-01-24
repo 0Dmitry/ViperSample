@@ -10,7 +10,7 @@
 
 #import "VSMPLNewsViewOutput.h"
 
-static CGFloat const kNewsFilterModuleHeight = 100.;
+static CGFloat const kNewsFilterModuleHeight = 200.;
 
 @interface VSMPLNewsViewController () <VSMPLNewsViewInput>
 
@@ -60,14 +60,11 @@ static CGFloat const kNewsFilterModuleHeight = 100.;
     [self addChildViewController:view];
     [self.view addSubview:view.view];
     
-    [self.newsFilterView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:kNewsFilterModuleHeight];
-    [self.newsFilterView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor];
-    [self.newsFilterView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor];
-    [self.newsFilterView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor];
+    [[self.newsListView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:kNewsFilterModuleHeight] setActive:YES];
+    [[self.newsListView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor] setActive:YES];
+    [[self.newsListView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor] setActive:YES];
+    [[self.newsListView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor] setActive:YES];
     
-//    NSDictionary * views = @{@"grid": self.calendarGridView, @"header": self.calendarHeaderView};
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[grid]|" options:0 metrics:nil views:views]];
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[header][grid]|" options:0 metrics:nil views:views]];
     [view didMoveToParentViewController:self];
 }
 

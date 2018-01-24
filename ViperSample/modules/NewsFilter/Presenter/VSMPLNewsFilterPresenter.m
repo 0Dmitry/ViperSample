@@ -32,6 +32,19 @@
     [self.output configureNewsFilterModuleView:(UIViewController*)self.view];
 }
 
+
 #pragma mark - Методы VSMPLNewsFilterInteractorOutput
+
+
+@synthesize filter;
+-(id<VSMPLNewsFilterProtocol>)filter {
+    return self.view;
+}
+
+
+
+- (void)newsFilterValuesDidChange {
+    [self.output newsFilterValuesDidChange];
+}
 
 @end

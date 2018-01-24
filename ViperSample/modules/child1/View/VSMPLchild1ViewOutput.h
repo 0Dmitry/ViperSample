@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSMPLNewsTableDataSource.h"
 
 @protocol VSMPLchild1ViewOutput <NSObject>
+
+@property(nonatomic,weak) id<VSMPLNewsTableDataSource> tableDatasource;
 
 /**
  @author dmitry

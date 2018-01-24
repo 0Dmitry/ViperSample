@@ -10,7 +10,9 @@
 
 #import "VSMPLNewsFilterViewOutput.h"
 
-@implementation VSMPLNewsFilterViewController
+@implementation VSMPLNewsFilterViewController {
+    __weak IBOutlet UISwitch *showOnlyUnreadSwitch;
+}
 
 #pragma mark - Методы жизненного цикла
 
@@ -24,6 +26,23 @@
 
 - (void)setupInitialState {
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+}
+
+
+#pragma mark - VSMPLNewsFilterParamsProtocol
+
+- (IBAction)showOnlyUnreadSwitchValueChanged:(UISwitch *)sender {
+    [self.output newsFilterValuesDidChange];
+}
+
+@synthesize isRead;
+
+-(NSNumber *)isRead {
+    if(showOnlyUnreadSwitch.isOn) {
+        return @(NO);
+    } else {
+        return nil;
+    }
 }
 
 @end

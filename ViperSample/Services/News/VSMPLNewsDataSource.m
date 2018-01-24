@@ -9,16 +9,14 @@
 #import "VSMPLNewsDataSource.h"
 #import "VSMPLDefaultNews.h"
 
-@implementation VSMPLNewsDataSource {
-    VSMPLNewsFilter * _filter;
-}
+@implementation VSMPLNewsDataSource
 
 - (id<VSMPLNews>)getNewsForRow:(NSInteger)row {
-    return [_newsManager getNewsWithFilter:_filter andRow:row];
+    return [_newsManager getNewsWithFilter:self.filterSource.filter andRow:row];
 }
 
 - (NSInteger)newsCount {
-    return [_newsManager getNewsCountWithFilter:_filter];
+    return [_newsManager getNewsCountWithFilter:self.filterSource.filter];
 }
 
 @end

@@ -13,7 +13,7 @@
 
 static NSString * const kNewsKey = @"NewsStoryboard";
 static NSString * const kNewsFilterKey = @"NewsFilterStoryboard";
-static NSString * const kNewsListKey = @"NewsListStoryboard";
+static NSString * const kNewsListKey = @"UnreadNews";
 
 @implementation VSMPLStoryboardAssembly
 

@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface VSMPLNewsFilter : NSObject
+@protocol VSMPLNewsFilterProtocol <NSObject>
 
 @property(nonatomic, readonly) NSNumber * isRead;
-
--(instancetype) initWithIsRead:(NSNumber * ) isRead;
 
 @end

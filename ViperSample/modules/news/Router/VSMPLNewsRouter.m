@@ -23,7 +23,6 @@
     [[self.transitionHandler openModuleUsingFactory:self.storyboardFactory.newsFilterFactory withTransitionBlock:^(id<RamblerViperModuleTransitionHandlerProtocol> sourceModuleTransitionHandler, id<RamblerViperModuleTransitionHandlerProtocol> destinationModuleTransitionHandler) {
         //
     }] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<VSMPLNewsFilterModuleInput> moduleInput) {
-        //настраиваем взаимосвязи между presenter модуля Calendar и модуля CalendarHeader
         id<VSMPLNewsModuleInput> currentModuleInput = (id<VSMPLNewsModuleInput>)self.transitionHandler.moduleInput;
         currentModuleInput.newsFilterModule = moduleInput;
         
@@ -37,7 +36,6 @@
     [[self.transitionHandler openModuleUsingFactory:self.storyboardFactory.newsListFactory withTransitionBlock:^(id<RamblerViperModuleTransitionHandlerProtocol> sourceModuleTransitionHandler, id<RamblerViperModuleTransitionHandlerProtocol> destinationModuleTransitionHandler) {
         //
     }] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<VSMPLchild1ModuleInput> moduleInput) {
-        //настраиваем взаимосвязи между presenter модуля Calendar и модуля CalendarGrid
         id<VSMPLNewsModuleInput> currentModuleInput = (id<VSMPLNewsModuleInput>)self.transitionHandler.moduleInput;
         currentModuleInput.newsListModule = moduleInput;
         

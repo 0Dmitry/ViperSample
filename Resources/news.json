@@ -25,14 +25,14 @@
 		"title": "Title 4",
 		"text": "Text 4",
 		"date": "2018-01-04",
-		"isRead": false,
+		"isRead": true,
 	},
 	{
 		"id": 5,
 		"title": "Title 5",
 		"text": "Text 5",
 		"date": "2018-01-05",
-		"isRead": false,
+		"isRead": true,
 	},
 
 ]

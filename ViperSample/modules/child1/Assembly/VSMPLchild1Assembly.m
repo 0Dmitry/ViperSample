@@ -28,7 +28,6 @@
                                                     with:[self presenterchild1]];
                               [definition injectProperty:@selector(moduleInput)
                                                     with:[self presenterchild1]];
-                              [definition injectProperty:@selector(tableDatasource) with:[self unreadNewsDataSource]];
                               [definition injectProperty:@selector(tableCellDecorator) with:[self defaultNewsTableCellDecorator]];
                           }];
 }
@@ -40,7 +39,6 @@
                                                     with:[self presenterchild1]];
                               [definition injectProperty:@selector(moduleInput)
                                                     with:[self presenterchild1]];
-                              [definition injectProperty:@selector(tableDatasource) with:[self readNewsDataSource]];
                               [definition injectProperty:@selector(tableCellDecorator) with:[self defaultNewsTableCellDecorator]];
                           }];
 }
@@ -61,6 +59,7 @@
                                                     with:[self unreadNewsView]];
                               [definition injectProperty:@selector(interactor)
                                                     with:[self interactorchild1]];
+                              [definition injectProperty:@selector(newsDatasource) with:[self newsDataSource]];
                               [definition injectProperty:@selector(router)
                                                     with:[self routerchild1]];
                           }];
@@ -74,23 +73,12 @@
                           }];
 }
 
--(id<VSMPLNewsTableDataSource>) unreadNewsDataSource {
+-(id<VSMPLNewsTableDataSource>) newsDataSource {
     return [TyphoonDefinition withClass:[VSMPLNewsDataSource class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(newsManager) with:[self newsManager]];
-        
-        VSMPLNewsFilter * filter = [[VSMPLNewsFilter alloc] initWithIsRead:@(NO)];
-        [definition injectProperty:@selector(filter) with: filter];
     }];
 }
 
--(id<VSMPLNewsTableDataSource>) readNewsDataSource {
-    return [TyphoonDefinition withClass:[VSMPLNewsDataSource class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(newsManager) with:[self newsManager]];
-        
-        VSMPLNewsFilter * filter = [[VSMPLNewsFilter alloc] initWithIsRead:@(YES)];
-        [definition injectProperty:@selector(filter) with: filter];
-    }];
-}
 
 -(id<VSMPLNewsTableCellDecorator>) defaultNewsTableCellDecorator {
     return [TyphoonDefinition withClass:[VSMPLDefaultNewsTableCellDecorator class]];

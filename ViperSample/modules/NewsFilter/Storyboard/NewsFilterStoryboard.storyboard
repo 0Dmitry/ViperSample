@@ -20,12 +20,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDP-Hh-73m">
-                                <rect key="frame" x="310" y="20" width="51" height="31"/>
+                                <rect key="frame" x="310" y="25" width="51" height="31"/>
+                                <connections>
+                                    <action selector="showOnlyUnreadSwitchValueChanged:" destination="B6i-g0-X2m" eventType="valueChanged" id="QaM-Ki-fZg"/>
+                                </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show only Unread" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-RY-XTA">
-                                <rect key="frame" x="16" y="25" width="161" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYp-DY-fxZ" userLabel="FooterView">
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="161" id="sNh-rB-XP7"/>
+                                    <constraint firstAttribute="height" constant="1" id="Fpd-82-OQ6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFv-1U-S5e" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="ZbJ-Gm-3Ti"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show only Unread" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-RY-XTA">
+                                <rect key="frame" x="16" y="30" width="161" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="5DI-hb-779"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -34,13 +51,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gCp-RY-XTA" firstAttribute="leading" secondItem="Ahx-Aa-yPw" secondAttribute="leadingMargin" id="ZyM-iP-i7T"/>
-                            <constraint firstItem="fDP-Hh-73m" firstAttribute="trailing" secondItem="Ahx-Aa-yPw" secondAttribute="trailingMargin" id="oNB-jG-5Pj"/>
-                            <constraint firstItem="gCp-RY-XTA" firstAttribute="centerY" secondItem="fDP-Hh-73m" secondAttribute="centerY" id="qVK-iA-3r5"/>
-                            <constraint firstItem="fDP-Hh-73m" firstAttribute="top" secondItem="lk1-7X-6ku" secondAttribute="top" id="yjO-4x-Y2Q"/>
+                            <constraint firstItem="VFv-1U-S5e" firstAttribute="leading" secondItem="Ahx-Aa-yPw" secondAttribute="leading" id="6pG-pp-u6s"/>
+                            <constraint firstItem="gCp-RY-XTA" firstAttribute="centerY" secondItem="fDP-Hh-73m" secondAttribute="centerY" id="BUj-hN-h4K"/>
+                            <constraint firstItem="gCp-RY-XTA" firstAttribute="leading" secondItem="Ahx-Aa-yPw" secondAttribute="leadingMargin" id="Bjr-v3-MW0"/>
+                            <constraint firstItem="fDP-Hh-73m" firstAttribute="top" secondItem="lk1-7X-6ku" secondAttribute="top" constant="5" id="Vjp-Mn-6xG"/>
+                            <constraint firstItem="OYp-DY-fxZ" firstAttribute="leading" secondItem="Ahx-Aa-yPw" secondAttribute="leading" id="a6c-ZH-bSt"/>
+                            <constraint firstAttribute="trailing" secondItem="OYp-DY-fxZ" secondAttribute="trailing" id="clC-9J-KeY"/>
+                            <constraint firstItem="OYp-DY-fxZ" firstAttribute="bottom" secondItem="lk1-7X-6ku" secondAttribute="bottom" id="j4d-v2-WcZ"/>
+                            <constraint firstItem="VFv-1U-S5e" firstAttribute="top" secondItem="Ahx-Aa-yPw" secondAttribute="top" id="k7r-6i-2eb"/>
+                            <constraint firstItem="fDP-Hh-73m" firstAttribute="trailing" secondItem="Ahx-Aa-yPw" secondAttribute="trailingMargin" id="nUJ-EG-VoJ"/>
+                            <constraint firstAttribute="trailing" secondItem="VFv-1U-S5e" secondAttribute="trailing" id="tlR-Hr-dhi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lk1-7X-6ku"/>
                     </view>
+                    <connections>
+                        <outlet property="showOnlyUnreadSwitch" destination="fDP-Hh-73m" id="XoS-IV-yy9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bD5-8j-ScH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "VSMPLNewsTableDataSource.h"
 #import "VSMPLNewsManager.h"
-#import "VSMPLNewsFilter.h"
+#import "VSMPLNewsFilterSource.h"
 
 @interface VSMPLNewsDataSource : NSObject<VSMPLNewsTableDataSource>
 
 @property(nonatomic, strong) VSMPLNewsManager * newsManager;
-@property(nonatomic, strong) VSMPLNewsFilter * filter;
+@property(nonatomic, strong) id<VSMPLNewsFilterSource> filterSource;
 
 @end

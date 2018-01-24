@@ -12,7 +12,7 @@
 
 
 static NSString *const kNewsFilterRestorationId = @"NewsFilterStoryboard";
-static NSString *const kNewsListRestorationId = @"VSMPLNewsListViewController";
+static NSString *const kNewsListRestorationId = @"UnreadNews";
 
 @interface VSMPLNewsStoryboardFactory ()
 

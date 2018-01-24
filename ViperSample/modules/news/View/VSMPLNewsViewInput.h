@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #import "VSMPLNewsFilterConfigurationProtocol.h"
+#import "VSMPLNewsListConfigurationProtocol.h"
 
-@protocol VSMPLNewsViewInput <VSMPLNewsFilterConfigurationProtocol>
+@protocol VSMPLNewsViewInput <VSMPLNewsFilterConfigurationProtocol, VSMPLNewsListConfigurationProtocol>
 
 /**
  @author dmitry

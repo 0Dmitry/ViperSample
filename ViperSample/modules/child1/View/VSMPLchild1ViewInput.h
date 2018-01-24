@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSMPLNewsFilterDelegate.h"
+#import "VSMPLNewsDataSource.h"
+#import "VSMPLNewsTableDataSource.h"
 
-@protocol VSMPLchild1ViewInput <NSObject>
+@protocol VSMPLchild1ViewInput <NSObject, VSMPLNewsFilterDelegate>
+
 
 /**
  @author dmitry

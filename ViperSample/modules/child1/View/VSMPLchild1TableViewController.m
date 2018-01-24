@@ -15,6 +15,7 @@
 
 @implementation VSMPLchild1TableViewController
 
+
 #pragma mark - Методы жизненного цикла
 
 - (void)viewDidLoad {
@@ -30,7 +31,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.tableDatasource newsCount];
+    return [self.output.tableDatasource newsCount];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -40,11 +41,19 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"NewsTableCell" forIndexPath:indexPath];
     
-    id<VSMPLNews> news = [self.tableDatasource getNewsForRow:indexPath.row];
+    id<VSMPLNews> news = [self.output.tableDatasource getNewsForRow:indexPath.row];
     
     [self.tableCellDecorator decorateCell:cell withNews:news];
     
     return cell;
 }
+
+-(void)newsFilterValuesDidChange {
+    [self.tableView reloadData];
+}
+
+
+
+
 
 @end

@@ -11,8 +11,11 @@
 #import "VSMPLNewsFilterModuleInput.h"
 #import "VSMPLchild1ModuleInput.h"
 #import "VSMPLNewsFilterModuleOutput.h"
+#import "VSMPLchild1ModuleOutput.h"
+#import "VSMPLNewsFilterSource.h"
+#import "VSMPLNewsFilterDelegate.h"
 
-@protocol VSMPLNewsModuleInput <RamblerViperModuleInput, VSMPLNewsFilterModuleOutput>
+@protocol VSMPLNewsModuleInput <RamblerViperModuleInput, VSMPLNewsFilterModuleOutput, VSMPLchild1ModuleOutput, VSMPLNewsFilterSource, VSMPLNewsFilterDelegate>
 
 
 @property (nonatomic, weak) id<VSMPLNewsFilterModuleInput> newsFilterModule;

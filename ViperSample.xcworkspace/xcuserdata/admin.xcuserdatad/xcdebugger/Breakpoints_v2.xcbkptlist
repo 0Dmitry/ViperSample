@@ -68,7 +68,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperSample/modules/News/View/VSMPLNewsViewController.m"
-            timestampString = "538409796.4366699"
+            timestampString = "538496947.608471"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -84,7 +84,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperSample/modules/News/Presenter/VSMPLNewsPresenter.m"
-            timestampString = "538405547.45392"
+            timestampString = "538496947.608584"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -100,7 +100,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperSample/modules/News/Router/VSMPLNewsRouter.m"
-            timestampString = "538405547.45433"
+            timestampString = "538472732.677703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -116,7 +116,7 @@
                   moduleName = "ViperSample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/SBERTECH/Projects/ViperSample/ViperSample/modules/News/Router/VSMPLNewsRouter.m"
-                  timestampString = "538408206.915429"
+                  timestampString = "538411885.8779711"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -131,7 +131,7 @@
                   moduleName = "ViperSample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/SBERTECH/Projects/ViperSample/ViperSample/modules/News/Router/VSMPLNewsRouter.m"
-                  timestampString = "538408206.918963"
+                  timestampString = "538411885.881444"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -148,7 +148,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperSample/modules/News/Router/VSMPLNewsRouter.m"
-            timestampString = "538405547.454697"
+            timestampString = "538472732.677776"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -164,13 +164,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperSample/modules/NewsFilter/Presenter/VSMPLNewsFilterPresenter.m"
-            timestampString = "538405547.454826"
+            timestampString = "538496947.608785"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "-setModuleOutput:"
-            landmarkType = "7">
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "VSMPLNewsFilterPresenter"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -180,13 +180,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperSample/modules/NewsFilter/Presenter/VSMPLNewsFilterPresenter.m"
-            timestampString = "538405762.104142"
+            timestampString = "538496947.608876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-didTriggerViewReadyEvent"
-            landmarkType = "7">
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "VSMPLNewsFilterPresenter"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -9,7 +9,7 @@
 #import "VSMPLNewsManager.h"
 #import "VSMPLDefaultNews.h"
 #import <EasyMapping.h>
-#import "VSMPLNewsFilter.h"
+#import "VSMPLNewsFilterProtocol.h"
 
 
 @interface VSMPLNewsManager()
@@ -19,15 +19,15 @@
 
 @implementation VSMPLNewsManager
 
--(NSInteger)getNewsCountWithFilter:(VSMPLNewsFilter *)filter {
+-(NSInteger)getNewsCountWithFilter:(id<VSMPLNewsFilterProtocol>)filter {
     return [[self getNewsWithFilter:filter] count];
 }
 
--(id<VSMPLNews>)getNewsWithFilter:(VSMPLNewsFilter *)filter andRow:(NSInteger)row {
+-(id<VSMPLNews>)getNewsWithFilter:(id<VSMPLNewsFilterProtocol>)filter andRow:(NSInteger)row {
     return [self getNewsWithFilter:filter][row];
 }
 
--(NSArray<id<VSMPLNews>> *)getNewsWithFilter:(VSMPLNewsFilter *)filter{
+-(NSArray<id<VSMPLNews>> *)getNewsWithFilter:(id<VSMPLNewsFilterProtocol>)filter{
     return [self.allNews filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id<VSMPLNews>  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
         BOOL match = YES;
         
