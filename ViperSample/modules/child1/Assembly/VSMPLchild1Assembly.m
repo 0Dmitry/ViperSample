@@ -21,18 +21,7 @@
 
 @implementation VSMPLchild1Assembly
 
-- (VSMPLchild1TableViewController *)unreadNewsView {
-    return [TyphoonDefinition withClass:[VSMPLchild1TableViewController class]
-                          configuration:^(TyphoonDefinition *definition) {
-                              [definition injectProperty:@selector(output)
-                                                    with:[self presenterchild1]];
-                              [definition injectProperty:@selector(moduleInput)
-                                                    with:[self presenterchild1]];
-                              [definition injectProperty:@selector(tableCellDecorator) with:[self defaultNewsTableCellDecorator]];
-                          }];
-}
-
-- (VSMPLchild1TableViewController *)readNewsView {
+- (VSMPLchild1TableViewController *)newsView {
     return [TyphoonDefinition withClass:[VSMPLchild1TableViewController class]
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
@@ -56,7 +45,7 @@
     return [TyphoonDefinition withClass:[VSMPLchild1Presenter class]
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(view)
-                                                    with:[self unreadNewsView]];
+                                                    with:[self newsView]];
                               [definition injectProperty:@selector(interactor)
                                                     with:[self interactorchild1]];
                               [definition injectProperty:@selector(newsDatasource) with:[self newsDataSource]];
@@ -69,7 +58,7 @@
     return [TyphoonDefinition withClass:[VSMPLchild1Router class]
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(transitionHandler)
-                                                    with:[self unreadNewsView]];
+                                                    with:[self newsView]];
                           }];
 }
 
