@@ -43,6 +43,11 @@
     [self.view configureNewsListModuleView:view];
 }
 
+-(void)configureNewsDetailsModuleView:(UIViewController *)view {
+    [self.view configureNewsDetailsModuleView:view];
+}
+
+
 -(id<VSMPLNewsFilterProtocol>)newsFilter {
     return self.newsFilterModule.filter;
 }
@@ -61,5 +66,13 @@
 -(void)newsFilterValuesDidChange {
     [self.newsListModule newsFilterValuesDidChange];
 }
+
+#pragma mark - VSMPLNewsTableModuleOutput
+
+-(void)openNewsDetailsViewWithNewsId:(NSInteger)newsId {
+    [self.router openNewsDetailsViewWithNewsId:newsId];
+}
+
+
 
 @end

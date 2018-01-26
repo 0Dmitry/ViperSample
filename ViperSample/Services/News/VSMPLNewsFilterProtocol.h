@@ -11,5 +11,6 @@
 @protocol VSMPLNewsFilterProtocol <NSObject>
 
 @property(nonatomic, readonly) NSNumber * isRead;
+@property(nonatomic, readonly) NSNumber * newsId;
 
 @end

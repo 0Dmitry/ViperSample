@@ -13,6 +13,7 @@
 
 static NSString *const kNewsFilterRestorationId = @"NewsFilterStoryboard";
 static NSString *const kNewsListRestorationId = @"News";
+static NSString *const kNewsDetailsRestorationId = @"NewsDetails";
 
 @interface VSMPLNewsStoryboardFactory ()
 
@@ -36,6 +37,15 @@ static NSString *const kNewsListRestorationId = @"News";
         [definition useInitializer:@selector(initWithStoryboard:andRestorationId:) parameters:^(TyphoonMethod *initializer) {
             [initializer injectParameterWith:[self.storyboardAssembly newsListStoryboard]];
             [initializer injectParameterWith:kNewsListRestorationId];
+        }];
+    }];
+}
+
+- (RamblerViperModuleFactory *)newsDetailsFactory {
+    return [TyphoonDefinition withClass:[RamblerViperModuleFactory class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithStoryboard:andRestorationId:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:[self.storyboardAssembly newsDetailsStoryboard]];
+            [initializer injectParameterWith:kNewsDetailsRestorationId];
         }];
     }];
 }

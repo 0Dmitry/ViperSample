@@ -6,11 +6,12 @@
 //  Copyright © 2018 dmitryklochkov. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol VSMPLNewsRouterInput <NSObject>
 
 - (void)presentNewsFilterModule;
 - (void)presentNewsListModule;
+- (void)openNewsDetailsViewWithNewsId:(NSInteger) newsId;
 
 @end

@@ -9,11 +9,13 @@
 #import "VSMPLStoryboardAssembly.h"
 #import "VSMPLNewsViewController.h"
 #import "VSMPLNewsFilterViewController.h"
-#import "VSMPLchild1TableViewController.h"
+#import "VSMPLNewsTableViewController.h"
+#import "VSMPLNewsDetailsViewController.h"
 
 static NSString * const kNewsKey = @"NewsStoryboard";
 static NSString * const kNewsFilterKey = @"NewsFilterStoryboard";
 static NSString * const kNewsListKey = @"News";
+static NSString * const kNewsDetailsKey = @"NewsDetails";
 
 @implementation VSMPLStoryboardAssembly
 
@@ -46,7 +48,19 @@ static NSString * const kNewsListKey = @"News";
                         parameters:^(TyphoonMethod *initializer) {
                             [initializer injectParameterWith:kNewsListKey];
                             [initializer injectParameterWith:self];
-                            NSBundle *bundle = [NSBundle bundleForClass:[VSMPLchild1TableViewController class]];
+                            NSBundle *bundle = [NSBundle bundleForClass:[VSMPLNewsTableViewController class]];
+                            [initializer injectParameterWith:bundle];
+                        }];
+    }];
+}
+
+- (UIStoryboard *)newsDetailsStoryboard{
+    return [TyphoonDefinition withClass:[TyphoonStoryboard class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(storyboardWithName:factory:bundle:)
+                        parameters:^(TyphoonMethod *initializer) {
+                            [initializer injectParameterWith:kNewsDetailsKey];
+                            [initializer injectParameterWith:self];
+                            NSBundle *bundle = [NSBundle bundleForClass:[VSMPLNewsDetailsViewController class]];
                             [initializer injectParameterWith:bundle];
                         }];
     }];

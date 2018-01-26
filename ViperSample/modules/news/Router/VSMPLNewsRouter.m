@@ -10,8 +10,10 @@
 #import "VSMPLNewsFilterModuleInput.h"
 #import "VSMPLNewsModuleInput.h"
 #import "VSMPLNewsFilterModuleOutput.h"
-#import "VSMPLchild1ModuleInput.h"
-#import "VSMPLchild1ModuleOutput.h"
+#import "VSMPLNewsTableModuleInput.h"
+#import "VSMPLNewsTableModuleOutput.h"
+#import "VSMPLNewsDetailsModuleInput.h"
+#import "VSMPLNewsDetailsModuleOutput.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -35,12 +37,27 @@
 - (void)presentNewsListModule {
     [[self.transitionHandler openModuleUsingFactory:self.storyboardFactory.newsListFactory withTransitionBlock:^(id<RamblerViperModuleTransitionHandlerProtocol> sourceModuleTransitionHandler, id<RamblerViperModuleTransitionHandlerProtocol> destinationModuleTransitionHandler) {
         //
-    }] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<VSMPLchild1ModuleInput> moduleInput) {
+    }] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<VSMPLNewsTableModuleInput> moduleInput) {
         id<VSMPLNewsModuleInput> currentModuleInput = (id<VSMPLNewsModuleInput>)self.transitionHandler.moduleInput;
         currentModuleInput.newsListModule = moduleInput;
         
         //return outPut вызывает метод  - (void)setModuleOutput:(id<RamblerViperModuleOutput>)moduleOutput
-        id<VSMPLchild1ModuleOutput> outPut = (id<VSMPLchild1ModuleOutput>)self.transitionHandler.moduleInput;
+        id<VSMPLNewsTableModuleOutput> outPut = (id<VSMPLNewsTableModuleOutput>)self.transitionHandler.moduleInput;
+        return outPut;
+    }];
+}
+
+-(void)openNewsDetailsViewWithNewsId:(NSInteger)newsId {
+    [[self.transitionHandler openModuleUsingFactory:self.storyboardFactory.newsDetailsFactory withTransitionBlock:^(id<RamblerViperModuleTransitionHandlerProtocol> sourceModuleTransitionHandler, id<RamblerViperModuleTransitionHandlerProtocol> destinationModuleTransitionHandler) {
+        //
+    }] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<VSMPLNewsDetailsModuleInput> moduleInput) {
+        //id<VSMPLNewsModuleInput> currentModuleInput = (id<VSMPLNewsModuleInput>)self.transitionHandler.moduleInput;
+        //currentModuleInput.newsListModule = moduleInput;
+        
+        [moduleInput updateWithNewsId:newsId];
+        
+        //return outPut вызывает метод  - (void)setModuleOutput:(id<RamblerViperModuleOutput>)moduleOutput
+        id<VSMPLNewsDetailsModuleOutput> outPut = (id<VSMPLNewsDetailsModuleOutput>)self.transitionHandler.moduleInput;
         return outPut;
     }];
 }

@@ -15,5 +15,6 @@
 @required
 - (RamblerViperModuleFactory *) newsFilterFactory;
 - (RamblerViperModuleFactory *) newsListFactory;
+- (RamblerViperModuleFactory *) newsDetailsFactory;
 
 @end

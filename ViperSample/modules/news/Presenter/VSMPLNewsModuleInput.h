@@ -9,17 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <ViperMcFlurry/ViperMcFlurry.h>
 #import "VSMPLNewsFilterModuleInput.h"
-#import "VSMPLchild1ModuleInput.h"
+#import "VSMPLNewsTableModuleInput.h"
 #import "VSMPLNewsFilterModuleOutput.h"
-#import "VSMPLchild1ModuleOutput.h"
+#import "VSMPLNewsTableModuleOutput.h"
 #import "VSMPLNewsFilterSource.h"
 #import "VSMPLNewsFilterDelegate.h"
+#import "VSMPLNewsDetailsModuleOutput.h"
 
-@protocol VSMPLNewsModuleInput <RamblerViperModuleInput, VSMPLNewsFilterModuleOutput, VSMPLchild1ModuleOutput, VSMPLNewsFilterSource, VSMPLNewsFilterDelegate>
+@protocol VSMPLNewsModuleInput <RamblerViperModuleInput, VSMPLNewsFilterModuleOutput, VSMPLNewsTableModuleOutput, VSMPLNewsFilterSource, VSMPLNewsFilterDelegate, VSMPLNewsDetailsModuleOutput>
 
 
 @property (nonatomic, weak) id<VSMPLNewsFilterModuleInput> newsFilterModule;
-@property (nonatomic, weak) id<VSMPLchild1ModuleInput> newsListModule;
+@property (nonatomic, weak) id<VSMPLNewsTableModuleInput> newsListModule;
 
 /**
  @author dmitry

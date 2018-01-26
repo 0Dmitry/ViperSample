@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Details View Controller-->
+        <scene sceneID="DyR-PM-sv3">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetails" id="pHL-it-AvH" customClass="VSMPLNewsDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="whl-yn-opf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" text="News Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tab-9I-7Uc">
+                                <rect key="frame" x="20" y="20" width="318" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="l83-v1-XZL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfu-9T-HpT">
+                                <rect key="frame" x="358" y="20" width="36" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uvn-Vb-xBo">
+                                <rect key="frame" x="20" y="68" width="374" height="648"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tab-9I-7Uc" firstAttribute="firstBaseline" secondItem="jfu-9T-HpT" secondAttribute="firstBaseline" id="8h3-Ma-Bd6"/>
+                            <constraint firstItem="jfu-9T-HpT" firstAttribute="leading" secondItem="Tab-9I-7Uc" secondAttribute="trailing" constant="20" id="Ac1-1W-ndT"/>
+                            <constraint firstAttribute="bottom" secondItem="uvn-Vb-xBo" secondAttribute="bottom" constant="20" symbolic="YES" id="MWF-H8-Zhk"/>
+                            <constraint firstItem="uvn-Vb-xBo" firstAttribute="top" secondItem="Tab-9I-7Uc" secondAttribute="bottom" constant="8" symbolic="YES" id="QFg-hQ-hOW"/>
+                            <constraint firstItem="jfu-9T-HpT" firstAttribute="trailing" secondItem="u8L-1r-in2" secondAttribute="trailing" constant="-20" id="aJP-9A-oGP"/>
+                            <constraint firstItem="Tab-9I-7Uc" firstAttribute="baseline" secondItem="jfu-9T-HpT" secondAttribute="baseline" id="fM7-h9-2MA"/>
+                            <constraint firstItem="uvn-Vb-xBo" firstAttribute="leading" secondItem="u8L-1r-in2" secondAttribute="leading" constant="20" id="fVa-x1-L60"/>
+                            <constraint firstItem="u8L-1r-in2" firstAttribute="trailing" secondItem="uvn-Vb-xBo" secondAttribute="trailing" constant="20" id="l4T-l6-g6s"/>
+                            <constraint firstItem="Tab-9I-7Uc" firstAttribute="leading" secondItem="u8L-1r-in2" secondAttribute="leading" constant="20" id="mgi-Ka-45d"/>
+                            <constraint firstItem="Tab-9I-7Uc" firstAttribute="top" secondItem="u8L-1r-in2" secondAttribute="top" id="piP-Qf-6gp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u8L-1r-in2"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="jfu-9T-HpT" id="gJf-bR-cUM"/>
+                        <outlet property="newsTextView" destination="uvn-Vb-xBo" id="BQo-wS-s8D"/>
+                        <outlet property="newsTitleLabel" destination="Tab-9I-7Uc" id="XQc-oG-MOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhW-GR-dxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="70.923913043478265"/>
+        </scene>
+    </scenes>
+</document>

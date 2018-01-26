@@ -14,5 +14,6 @@
 //- (UIStoryboard *) calendarStoryboard;
 - (UIStoryboard *) newsFilterStoryboard;
 - (UIStoryboard *) newsListStoryboard;
+- (UIStoryboard *) newsDetailsStoryboard;
 
 @end

@@ -10,8 +10,9 @@
 
 #import "VSMPLNewsFilterConfigurationProtocol.h"
 #import "VSMPLNewsListConfigurationProtocol.h"
+#import "VSMPLNewsDetailsViewConfigurationProtocol.h"
 
-@protocol VSMPLNewsViewInput <VSMPLNewsFilterConfigurationProtocol, VSMPLNewsListConfigurationProtocol>
+@protocol VSMPLNewsViewInput <VSMPLNewsFilterConfigurationProtocol, VSMPLNewsListConfigurationProtocol, VSMPLNewsDetailsViewConfigurationProtocol>
 
 /**
  @author dmitry

@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0B07FE5AD8841436298D2401 /* VSMPLNewsFilterPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F85D83E674BACC76D59F5B92 /* VSMPLNewsFilterPresenter.m */; };
+		0B23214F33BF4835934D95ED /* VSMPLNewsDetailsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5CC68D3C5E0A644534F81 /* VSMPLNewsDetailsRouter.m */; };
 		0F2E63260066D59389977A4D /* VSMPLNewsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 415953A1DBD5029E6461ACD3 /* VSMPLNewsPresenter.m */; };
 		2E96E516F1CE48EF3EF34682 /* VSMPLparentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89B2097F119C1A839DB3956 /* VSMPLparentViewController.m */; };
-		38484B05C5A63E9D6E5F698C /* VSMPLchild1Interactor.m in Sources */ = {isa = PBXBuildFile; fileRef = C42CA1EDBF0BF9658E8CD1C0 /* VSMPLchild1Interactor.m */; };
-		3D8806F89D3798783BEC5FE4 /* VSMPLchild1Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 1689030DA5A3A3CF643AA01E /* VSMPLchild1Router.m */; };
+		38484B05C5A63E9D6E5F698C /* VSMPLNewsTableInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C42CA1EDBF0BF9658E8CD1C0 /* VSMPLNewsTableInteractor.m */; };
+		3D8806F89D3798783BEC5FE4 /* VSMPLNewsTableRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1689030DA5A3A3CF643AA01E /* VSMPLNewsTableRouter.m */; };
 		4AAAC114DE69213558140EE7 /* VSMPLNewsFilterAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20A552585940E51350038D /* VSMPLNewsFilterAssembly.m */; };
+		4DE7D2FCAF376F00824452A6 /* VSMPLNewsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B421D8B38F64C4D8323C055 /* VSMPLNewsDetailsViewController.m */; };
 		5761123D9B291F82351B0A77 /* libPods-ViperSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31C43CED257FBEB7C91BA41 /* libPods-ViperSample.a */; };
 		6A655F9A6B4F60687947CBD6 /* VSMPLparentAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F67ACDF94A4D83C4B66ED6 /* VSMPLparentAssembly.m */; };
 		735188405AE7D7AE965CCDC8 /* VSMPLNewsFilterInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438561034B15FC8B0E2EA17 /* VSMPLNewsFilterInteractor.m */; };
 		840752CB2015E14500015F1A /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 840752CA2015E14500015F1A /* news.json */; };
 		841E039F2015C1CD009F3252 /* VSMPLNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E039E2015C1CD009F3252 /* VSMPLNewsManager.m */; };
+		841F8C14201B5CA4001C6056 /* VSMPLNewsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C13201B5CA4001C6056 /* VSMPLNewsFilter.m */; };
+		841F8C17201B63BC001C6056 /* VSMPLNewsServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C16201B63BC001C6056 /* VSMPLNewsServiceAssembly.m */; };
 		8421CB43200F6F5F00F7470A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421CB42200F6F5F00F7470A /* AppDelegate.m */; };
 		8421CB4B200F6F5F00F7470A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8421CB4A200F6F5F00F7470A /* Assets.xcassets */; };
 		8421CB4E200F6F5F00F7470A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8421CB4C200F6F5F00F7470A /* LaunchScreen.storyboard */; };
@@ -25,21 +29,25 @@
 		8431442920122AC300940999 /* VSMPLNewsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8431442820122AC300940999 /* VSMPLNewsDataSource.m */; };
 		8431443220122F3300940999 /* VSMPLDefaultNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 8431442F20122F3200940999 /* VSMPLDefaultNews.m */; };
 		845CD0A22011EC2B00614BCA /* VSMPLDefaultNewsTableCellDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CD0A12011EC2B00614BCA /* VSMPLDefaultNewsTableCellDecorator.m */; };
-		846BD3CF201719F500A4ED6A /* VSMPLchild1Assembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BD3CD201719F500A4ED6A /* VSMPLchild1Assembly.m */; };
+		846BD3CF201719F500A4ED6A /* VSMPLNewsTableAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BD3CD201719F500A4ED6A /* VSMPLNewsTableAssembly.m */; };
 		846BD3D720171D8100A4ED6A /* VSMPLNewsStoryboardFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BD3D220171D8100A4ED6A /* VSMPLNewsStoryboardFactory.m */; };
 		846BD3D820171D8100A4ED6A /* VSMPLStoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BD3D520171D8100A4ED6A /* VSMPLStoryboardAssembly.m */; };
 		846BD3DB20172B2F00A4ED6A /* NewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846BD3DA20172B2F00A4ED6A /* NewsStoryboard.storyboard */; };
 		846BD3E12017504200A4ED6A /* NewsFilterStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846BD3E02017504200A4ED6A /* NewsFilterStoryboard.storyboard */; };
 		8485D6B32010A2B900B4F84F /* Parent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8485D6B22010A2B900B4F84F /* Parent.storyboard */; };
 		8485D6B52010A2D500B4F84F /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8485D6B42010A2D500B4F84F /* News.storyboard */; };
-		8485D6BA2010C84A00B4F84F /* VSMPChild1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8485D6B92010C84A00B4F84F /* VSMPChild1TableViewCell.m */; };
+		8485D6BA2010C84A00B4F84F /* VSMPNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8485D6B92010C84A00B4F84F /* VSMPNewsTableViewCell.m */; };
+		849F4C572019ED4E006D8BF7 /* NewsDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F4C562019ED4E006D8BF7 /* NewsDetails.storyboard */; };
 		8729A79D392E60D9CB6FFEA5 /* VSMPLNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D331C637129A375587A7B6 /* VSMPLNewsViewController.m */; };
 		88AED46345F042F4CAE89814 /* VSMPLNewsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F00D76954AC79E61B9FA785E /* VSMPLNewsRouter.m */; };
 		8CD9DA41E28FCD92BADB81DC /* VSMPLNewsFilterRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DC7FA26CBAB0E86705BF7A /* VSMPLNewsFilterRouter.m */; };
 		8D79879FEBE3D0E969CF1205 /* VSMPLNewsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 677E4EA08CF570D6CC0811D3 /* VSMPLNewsInteractor.m */; };
-		B2361181F032DFFECBB2BB5C /* VSMPLchild1Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93CE42D1041975CE879B47 /* VSMPLchild1Presenter.m */; };
-		BB480EA5FDB4094C9D0AC02E /* VSMPLchild1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E206520DBFB6363A55F796D /* VSMPLchild1TableViewController.m */; };
+		B2361181F032DFFECBB2BB5C /* VSMPLNewsTablePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93CE42D1041975CE879B47 /* VSMPLNewsTablePresenter.m */; };
+		B60A10BC605BABC58008D6C4 /* VSMPLNewsDetailsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4843C7C2426609A384A6EB /* VSMPLNewsDetailsInteractor.m */; };
+		BB480EA5FDB4094C9D0AC02E /* VSMPLNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E206520DBFB6363A55F796D /* VSMPLNewsTableViewController.m */; };
 		BC971FD9859D595E4F928F94 /* VSMPLparentRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = C775ECD449CF62DD7C5CCA10 /* VSMPLparentRouter.m */; };
+		C85EB5E23DB1A17219634E8F /* VSMPLNewsDetailsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F90A942C66221E18A5EB9DD /* VSMPLNewsDetailsPresenter.m */; };
+		D1B623483FC29E39A786DE93 /* VSMPLNewsDetailsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B353003C1B1A86A61C4C9A8 /* VSMPLNewsDetailsAssembly.m */; };
 		D62FBA1A69257A49A601F1E0 /* VSMPLNewsFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AEF6A5E9C191B5640A23C /* VSMPLNewsFilterViewController.m */; };
 		DC1FC7C82750AAFC7F912AFA /* VSMPLparentInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 123BB7C0D5DC792CC5B99834 /* VSMPLparentInteractor.m */; };
 		E0F720E1D35CC6745B8B3497 /* VSMPLparentPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EF72B967663912A1EB15A5 /* VSMPLparentPresenter.m */; };
@@ -47,45 +55,63 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		051E550315D2A34B4EBC2870 /* VSMPLchild1Interactor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1Interactor.h; sourceTree = "<group>"; };
+		051E550315D2A34B4EBC2870 /* VSMPLNewsTableInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableInteractor.h; sourceTree = "<group>"; };
 		05CBC1279BEF94D9A2F025CD /* VSMPLparentRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentRouter.h; sourceTree = "<group>"; };
 		09DB9BAB03F9D334BE1AA11A /* VSMPLNewsFilterViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterViewController.h; sourceTree = "<group>"; };
 		0B34B40D6F1D1AECA1F90F0D /* VSMPLparentViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentViewOutput.h; sourceTree = "<group>"; };
-		0C93CE42D1041975CE879B47 /* VSMPLchild1Presenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLchild1Presenter.m; sourceTree = "<group>"; };
-		0E206520DBFB6363A55F796D /* VSMPLchild1TableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLchild1TableViewController.m; sourceTree = "<group>"; };
+		0C93CE42D1041975CE879B47 /* VSMPLNewsTablePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsTablePresenter.m; sourceTree = "<group>"; };
+		0E206520DBFB6363A55F796D /* VSMPLNewsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsTableViewController.m; sourceTree = "<group>"; };
+		0F19DF6495427911E2EC4143 /* VSMPLNewsDetailsPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsPresenter.h; sourceTree = "<group>"; };
 		104E800A16D0751CB4ED8AA0 /* VSMPLparentInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentInteractorInput.h; sourceTree = "<group>"; };
 		123BB7C0D5DC792CC5B99834 /* VSMPLparentInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLparentInteractor.m; sourceTree = "<group>"; };
 		13A90AD544FFE968FD8BE4B8 /* VSMPLNewsFilterInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterInteractorInput.h; sourceTree = "<group>"; };
 		161E2152FBCFE958D65507F4 /* VSMPLNewsRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsRouterInput.h; sourceTree = "<group>"; };
-		1689030DA5A3A3CF643AA01E /* VSMPLchild1Router.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLchild1Router.m; sourceTree = "<group>"; };
+		1689030DA5A3A3CF643AA01E /* VSMPLNewsTableRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsTableRouter.m; sourceTree = "<group>"; };
 		16F67ACDF94A4D83C4B66ED6 /* VSMPLparentAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLparentAssembly.m; sourceTree = "<group>"; };
+		1C12F1E6F7EE2796CBA0D379 /* VSMPLNewsDetailsInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsInteractor.h; sourceTree = "<group>"; };
+		1EF5CC68D3C5E0A644534F81 /* VSMPLNewsDetailsRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsDetailsRouter.m; sourceTree = "<group>"; };
+		282CD96E822B7D83C346D1BB /* VSMPLNewsDetailsRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsRouterInput.h; sourceTree = "<group>"; };
 		2E20A552585940E51350038D /* VSMPLNewsFilterAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsFilterAssembly.m; sourceTree = "<group>"; };
 		2E3DDE999A9E26B96C889BB5 /* VSMPLparentPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentPresenter.h; sourceTree = "<group>"; };
 		3831FB408E504C541DEE7EBE /* VSMPLparentRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentRouterInput.h; sourceTree = "<group>"; };
+		3B353003C1B1A86A61C4C9A8 /* VSMPLNewsDetailsAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsDetailsAssembly.m; sourceTree = "<group>"; };
+		3B421D8B38F64C4D8323C055 /* VSMPLNewsDetailsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsDetailsViewController.m; sourceTree = "<group>"; };
 		3D6EB385A7BF455057A1AE90 /* VSMPLNewsViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsViewOutput.h; sourceTree = "<group>"; };
 		3EDF40C0D681BC45BF2F9213 /* VSMPLNewsInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsInteractorInput.h; sourceTree = "<group>"; };
 		415953A1DBD5029E6461ACD3 /* VSMPLNewsPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsPresenter.m; sourceTree = "<group>"; };
+		47E752D9151FD26C53B479C9 /* VSMPLNewsDetailsInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsInteractorOutput.h; sourceTree = "<group>"; };
 		494AEF6A5E9C191B5640A23C /* VSMPLNewsFilterViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsFilterViewController.m; sourceTree = "<group>"; };
+		4AD3818CE46670B6A690FAB7 /* VSMPLNewsDetailsModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsModuleInput.h; sourceTree = "<group>"; };
 		4F72F82F9AB2DEEF40097864 /* VSMPLNewsFilterViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterViewOutput.h; sourceTree = "<group>"; };
 		4FB1D9560219FA6D9079D144 /* VSMPLparentAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentAssembly.h; sourceTree = "<group>"; };
 		50A7A04AE92912F5C2CB38A0 /* VSMPLNewsViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsViewInput.h; sourceTree = "<group>"; };
-		515E9ED4DE2C371C2EDD7874 /* VSMPLchild1TableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1TableViewController.h; sourceTree = "<group>"; };
+		515E9ED4DE2C371C2EDD7874 /* VSMPLNewsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableViewController.h; sourceTree = "<group>"; };
 		5479E9C40E2E56D2BF2B3CDD /* VSMPLNewsAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsAssembly.h; sourceTree = "<group>"; };
 		57AECC418D761C187C76553C /* VSMPLNewsModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsModuleInput.h; sourceTree = "<group>"; };
 		5EE46BFC06891AB27A6A3C25 /* VSMPLNewsFilterModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterModuleInput.h; sourceTree = "<group>"; };
 		60080E78215324854E7655BD /* VSMPLNewsRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsRouter.h; sourceTree = "<group>"; };
 		6556EDE5C6B5E434B3705ADB /* VSMPLNewsFilterPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterPresenter.h; sourceTree = "<group>"; };
-		666D69778E189142A8448286 /* VSMPLchild1Presenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1Presenter.h; sourceTree = "<group>"; };
+		666D69778E189142A8448286 /* VSMPLNewsTablePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTablePresenter.h; sourceTree = "<group>"; };
 		677E4EA08CF570D6CC0811D3 /* VSMPLNewsInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsInteractor.m; sourceTree = "<group>"; };
+		6CC37722360D1E5FE49D7036 /* VSMPLNewsDetailsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsViewController.h; sourceTree = "<group>"; };
 		7438561034B15FC8B0E2EA17 /* VSMPLNewsFilterInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsFilterInteractor.m; sourceTree = "<group>"; };
 		74ECFCB9AFF91FA06D9E7E83 /* VSMPLNewsFilterViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterViewInput.h; sourceTree = "<group>"; };
 		75EF72B967663912A1EB15A5 /* VSMPLparentPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLparentPresenter.m; sourceTree = "<group>"; };
 		7716C4CAA9D1419EB3DD56CE /* VSMPLNewsFilterRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterRouterInput.h; sourceTree = "<group>"; };
+		7AC3C1BD2B9DFC38065ED90F /* VSMPLNewsDetailsViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsViewOutput.h; sourceTree = "<group>"; };
+		7D4843C7C2426609A384A6EB /* VSMPLNewsDetailsInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsDetailsInteractor.m; sourceTree = "<group>"; };
 		7EAEEC86105707F8A470BEA8 /* VSMPLparentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentViewController.h; sourceTree = "<group>"; };
+		7F90A942C66221E18A5EB9DD /* VSMPLNewsDetailsPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsDetailsPresenter.m; sourceTree = "<group>"; };
 		840752CA2015E14500015F1A /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
 		841E039D2015C1CD009F3252 /* VSMPLNewsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsManager.h; sourceTree = "<group>"; };
 		841E039E2015C1CD009F3252 /* VSMPLNewsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsManager.m; sourceTree = "<group>"; };
 		841E03A02015C2F6009F3252 /* VSMPLNewsFilterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterProtocol.h; sourceTree = "<group>"; };
+		841F8C0F201B30BA001C6056 /* VSMPLNewsDetailsModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsModuleOutput.h; sourceTree = "<group>"; };
+		841F8C11201B4E43001C6056 /* VSMPLNewsDetailsViewConfigurationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsViewConfigurationProtocol.h; sourceTree = "<group>"; };
+		841F8C12201B5CA4001C6056 /* VSMPLNewsFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilter.h; sourceTree = "<group>"; };
+		841F8C13201B5CA4001C6056 /* VSMPLNewsFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsFilter.m; sourceTree = "<group>"; };
+		841F8C15201B63BC001C6056 /* VSMPLNewsServiceAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsServiceAssembly.h; sourceTree = "<group>"; };
+		841F8C16201B63BC001C6056 /* VSMPLNewsServiceAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsServiceAssembly.m; sourceTree = "<group>"; };
 		8421CB3E200F6F5F00F7470A /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8421CB41200F6F5F00F7470A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8421CB42200F6F5F00F7470A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,8 +128,8 @@
 		845CD09F2011E9BA00614BCA /* VSMPLNewsTableCellDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableCellDecorator.h; sourceTree = "<group>"; };
 		845CD0A02011EC2B00614BCA /* VSMPLDefaultNewsTableCellDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLDefaultNewsTableCellDecorator.h; sourceTree = "<group>"; };
 		845CD0A12011EC2B00614BCA /* VSMPLDefaultNewsTableCellDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPLDefaultNewsTableCellDecorator.m; sourceTree = "<group>"; };
-		846BD3CD201719F500A4ED6A /* VSMPLchild1Assembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMPLchild1Assembly.m; sourceTree = "<group>"; };
-		846BD3CE201719F500A4ED6A /* VSMPLchild1Assembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1Assembly.h; sourceTree = "<group>"; };
+		846BD3CD201719F500A4ED6A /* VSMPLNewsTableAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsTableAssembly.m; sourceTree = "<group>"; };
+		846BD3CE201719F500A4ED6A /* VSMPLNewsTableAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableAssembly.h; sourceTree = "<group>"; };
 		846BD3D120171D8100A4ED6A /* VSMPLNewsStoryboardFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsStoryboardFactory.h; sourceTree = "<group>"; };
 		846BD3D220171D8100A4ED6A /* VSMPLNewsStoryboardFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsStoryboardFactory.m; sourceTree = "<group>"; };
 		846BD3D320171D8100A4ED6A /* VSMPLNewsStoryboardFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsStoryboardFactoryProtocol.h; sourceTree = "<group>"; };
@@ -112,44 +138,49 @@
 		846BD3D620171D8100A4ED6A /* VSMPLStoryboardAssemblyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMPLStoryboardAssemblyProtocol.h; sourceTree = "<group>"; };
 		846BD3DA20172B2F00A4ED6A /* NewsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = NewsStoryboard.storyboard; path = ViperSample/modules/news/Storyboard/NewsStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		846BD3DC201737F500A4ED6A /* VSMPLNewsFilterModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterModuleOutput.h; sourceTree = "<group>"; };
-		846BD3DD2017395E00A4ED6A /* VSMPLchild1ModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1ModuleOutput.h; sourceTree = "<group>"; };
+		846BD3DD2017395E00A4ED6A /* VSMPLNewsTableModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableModuleOutput.h; sourceTree = "<group>"; };
 		846BD3DE20174D7400A4ED6A /* VSMPLNewsFilterConfigurationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterConfigurationProtocol.h; sourceTree = "<group>"; };
 		846BD3E02017504200A4ED6A /* NewsFilterStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsFilterStoryboard.storyboard; sourceTree = "<group>"; };
 		8485D6B22010A2B900B4F84F /* Parent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Parent.storyboard; sourceTree = "<group>"; };
 		8485D6B42010A2D500B4F84F /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
-		8485D6B82010C84A00B4F84F /* VSMPChild1TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPChild1TableViewCell.h; sourceTree = "<group>"; };
-		8485D6B92010C84A00B4F84F /* VSMPChild1TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPChild1TableViewCell.m; sourceTree = "<group>"; };
+		8485D6B82010C84A00B4F84F /* VSMPNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPNewsTableViewCell.h; sourceTree = "<group>"; };
+		8485D6B92010C84A00B4F84F /* VSMPNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMPNewsTableViewCell.m; sourceTree = "<group>"; };
 		84973A9E2011C2D900AA301A /* VSMPLNewsTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableDataSource.h; sourceTree = "<group>"; };
+		849F4C562019ED4E006D8BF7 /* NewsDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsDetails.storyboard; sourceTree = "<group>"; };
 		84A1DAA22018AA3C002CDFB7 /* VSMPLNewsFilterSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterSource.h; sourceTree = "<group>"; };
 		84DE281A2018BA9400F5DFAE /* VSMPLNewsFilterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterDelegate.h; sourceTree = "<group>"; };
-		8660D0429C01AB78185633C0 /* VSMPLchild1RouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1RouterInput.h; sourceTree = "<group>"; };
+		8660D0429C01AB78185633C0 /* VSMPLNewsTableRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableRouterInput.h; sourceTree = "<group>"; };
 		8BB16817C6DF4718CE3E0EA5 /* VSMPLNewsFilterAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterAssembly.h; sourceTree = "<group>"; };
 		8C3B27A4846FFC71644C022D /* Pods-ViperSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.debug.xcconfig"; sourceTree = "<group>"; };
-		8E792BE6051C297E1CA9189A /* VSMPLchild1ViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1ViewOutput.h; sourceTree = "<group>"; };
+		8E792BE6051C297E1CA9189A /* VSMPLNewsTableViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableViewOutput.h; sourceTree = "<group>"; };
 		9067AC834F0B85CCEE6CE6F2 /* VSMPLparentInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentInteractor.h; sourceTree = "<group>"; };
 		92ABC7AD593C8905BFF8AFF6 /* VSMPLparentInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentInteractorOutput.h; sourceTree = "<group>"; };
 		92D331C637129A375587A7B6 /* VSMPLNewsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsViewController.m; sourceTree = "<group>"; };
 		988A79B144A2192C588B0C8A /* VSMPLNewsPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsPresenter.h; sourceTree = "<group>"; };
-		AF542CF09033710223421526 /* VSMPLchild1InteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1InteractorOutput.h; sourceTree = "<group>"; };
+		AF542CF09033710223421526 /* VSMPLNewsTableInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableInteractorOutput.h; sourceTree = "<group>"; };
 		B09DD5D03439D390C8BCD880 /* VSMPLNewsFilterInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterInteractorOutput.h; sourceTree = "<group>"; };
-		B5CEA929F7D1D6BD50E53DEF /* VSMPLchild1ModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1ModuleInput.h; sourceTree = "<group>"; };
+		B1A704F06BD5231F45DAC30F /* VSMPLNewsDetailsAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsAssembly.h; sourceTree = "<group>"; };
+		B5CEA929F7D1D6BD50E53DEF /* VSMPLNewsTableModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableModuleInput.h; sourceTree = "<group>"; };
 		B6DC7FA26CBAB0E86705BF7A /* VSMPLNewsFilterRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsFilterRouter.m; sourceTree = "<group>"; };
 		BE6218F6ED391918D4BEC22D /* VSMPLNewsAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsAssembly.m; sourceTree = "<group>"; };
 		C2123A2EF81DB13407402BCD /* VSMPLNewsInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsInteractor.h; sourceTree = "<group>"; };
 		C31C43CED257FBEB7C91BA41 /* libPods-ViperSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C42CA1EDBF0BF9658E8CD1C0 /* VSMPLchild1Interactor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLchild1Interactor.m; sourceTree = "<group>"; };
-		C60D5237D32C14720F3C378C /* VSMPLchild1InteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1InteractorInput.h; sourceTree = "<group>"; };
+		C42CA1EDBF0BF9658E8CD1C0 /* VSMPLNewsTableInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsTableInteractor.m; sourceTree = "<group>"; };
+		C60D5237D32C14720F3C378C /* VSMPLNewsTableInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableInteractorInput.h; sourceTree = "<group>"; };
 		C775ECD449CF62DD7C5CCA10 /* VSMPLparentRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLparentRouter.m; sourceTree = "<group>"; };
 		CE7710022D51388A6E0A21B5 /* VSMPLNewsFilterInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterInteractor.h; sourceTree = "<group>"; };
 		D80B421219B70552671BA0E3 /* VSMPLNewsInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsInteractorOutput.h; sourceTree = "<group>"; };
 		D85705DD6B90CEDE44AE1C40 /* VSMPLNewsFilterRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsFilterRouter.h; sourceTree = "<group>"; };
 		DA667DFE359179B474B9D9DE /* VSMPLparentViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentViewInput.h; sourceTree = "<group>"; };
 		DD69EBD3EA03C233D7D3399B /* VSMPLparentModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLparentModuleInput.h; sourceTree = "<group>"; };
-		DE3A31A0AE70697712E0EF6C /* VSMPLchild1ViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1ViewInput.h; sourceTree = "<group>"; };
+		DE3A31A0AE70697712E0EF6C /* VSMPLNewsTableViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableViewInput.h; sourceTree = "<group>"; };
+		E7A1F1DBE0B9FC59DBC48B30 /* VSMPLNewsDetailsRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsRouter.h; sourceTree = "<group>"; };
 		E89B2097F119C1A839DB3956 /* VSMPLparentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLparentViewController.m; sourceTree = "<group>"; };
+		E9ED9AEA982EB06A5CF24D34 /* VSMPLNewsDetailsViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsViewInput.h; sourceTree = "<group>"; };
+		EB7C64BC600B37B116727134 /* VSMPLNewsDetailsInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsDetailsInteractorInput.h; sourceTree = "<group>"; };
 		F00D76954AC79E61B9FA785E /* VSMPLNewsRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsRouter.m; sourceTree = "<group>"; };
 		F4AFD0C7FC4FE976ED1D7C52 /* VSMPLNewsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsViewController.h; sourceTree = "<group>"; };
-		F7FE75C281CEE17E15BF69F5 /* VSMPLchild1Router.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLchild1Router.h; sourceTree = "<group>"; };
+		F7FE75C281CEE17E15BF69F5 /* VSMPLNewsTableRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VSMPLNewsTableRouter.h; sourceTree = "<group>"; };
 		F85D83E674BACC76D59F5B92 /* VSMPLNewsFilterPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VSMPLNewsFilterPresenter.m; sourceTree = "<group>"; };
 		F9E1DDADABDCB030B2285092 /* Pods-ViperSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,9 +223,10 @@
 			isa = PBXGroup;
 			children = (
 				4053138684CBCA23727C68C1 /* parent */,
-				16EE743D7FEE34BDDFD36525 /* child1 */,
+				16EE743D7FEE34BDDFD36525 /* NewsTable */,
 				049756EFBB4D9CF0AFFA8178 /* NewsFilter */,
 				8720085080F0EF77C60B419C /* News */,
+				2790E3894AB3BA2E6C0F7F9C /* NewsDetails */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -208,7 +240,7 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
-		16EE743D7FEE34BDDFD36525 /* child1 */ = {
+		16EE743D7FEE34BDDFD36525 /* NewsTable */ = {
 			isa = PBXGroup;
 			children = (
 				8485D6B02010A27E00B4F84F /* Storyboard */,
@@ -218,7 +250,7 @@
 				759514B8CD893F8B9BADB2A7 /* Interactor */,
 				DC230B27F36002B241A01DEB /* Router */,
 			);
-			path = child1;
+			path = NewsTable;
 			sourceTree = "<group>";
 		};
 		20AAA750B982C22EF1A76D5F /* View */ = {
@@ -228,6 +260,17 @@
 				3D6EB385A7BF455057A1AE90 /* VSMPLNewsViewOutput.h */,
 				F4AFD0C7FC4FE976ED1D7C52 /* VSMPLNewsViewController.h */,
 				92D331C637129A375587A7B6 /* VSMPLNewsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2234F96E4DBDEA70B9904C5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED9AEA982EB06A5CF24D34 /* VSMPLNewsDetailsViewInput.h */,
+				7AC3C1BD2B9DFC38065ED90F /* VSMPLNewsDetailsViewOutput.h */,
+				6CC37722360D1E5FE49D7036 /* VSMPLNewsDetailsViewController.h */,
+				3B421D8B38F64C4D8323C055 /* VSMPLNewsDetailsViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +294,28 @@
 			children = (
 				5479E9C40E2E56D2BF2B3CDD /* VSMPLNewsAssembly.h */,
 				BE6218F6ED391918D4BEC22D /* VSMPLNewsAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2790E3894AB3BA2E6C0F7F9C /* NewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				849F4C552019ECE7006D8BF7 /* StoryBoard */,
+				2A42FA66DB1E76DCFEF8B753 /* Assembly */,
+				2234F96E4DBDEA70B9904C5F /* View */,
+				A4B31362B60A702A3C3A9368 /* Presenter */,
+				C57FCACE84CB23ABFF038DF5 /* Interactor */,
+				E25316E0A5CAED49031B0C1B /* Router */,
+			);
+			path = NewsDetails;
+			sourceTree = "<group>";
+		};
+		2A42FA66DB1E76DCFEF8B753 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B1A704F06BD5231F45DAC30F /* VSMPLNewsDetailsAssembly.h */,
+				3B353003C1B1A86A61C4C9A8 /* VSMPLNewsDetailsAssembly.m */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -282,12 +347,12 @@
 		63B088C53E7EB61DE8FA0B55 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DE3A31A0AE70697712E0EF6C /* VSMPLchild1ViewInput.h */,
-				8E792BE6051C297E1CA9189A /* VSMPLchild1ViewOutput.h */,
-				515E9ED4DE2C371C2EDD7874 /* VSMPLchild1TableViewController.h */,
-				0E206520DBFB6363A55F796D /* VSMPLchild1TableViewController.m */,
-				8485D6B82010C84A00B4F84F /* VSMPChild1TableViewCell.h */,
-				8485D6B92010C84A00B4F84F /* VSMPChild1TableViewCell.m */,
+				DE3A31A0AE70697712E0EF6C /* VSMPLNewsTableViewInput.h */,
+				8E792BE6051C297E1CA9189A /* VSMPLNewsTableViewOutput.h */,
+				515E9ED4DE2C371C2EDD7874 /* VSMPLNewsTableViewController.h */,
+				0E206520DBFB6363A55F796D /* VSMPLNewsTableViewController.m */,
+				8485D6B82010C84A00B4F84F /* VSMPNewsTableViewCell.h */,
+				8485D6B92010C84A00B4F84F /* VSMPNewsTableViewCell.m */,
 				84973A9E2011C2D900AA301A /* VSMPLNewsTableDataSource.h */,
 				845CD09F2011E9BA00614BCA /* VSMPLNewsTableCellDecorator.h */,
 				845CD0A02011EC2B00614BCA /* VSMPLDefaultNewsTableCellDecorator.h */,
@@ -331,10 +396,10 @@
 		759514B8CD893F8B9BADB2A7 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				C60D5237D32C14720F3C378C /* VSMPLchild1InteractorInput.h */,
-				AF542CF09033710223421526 /* VSMPLchild1InteractorOutput.h */,
-				051E550315D2A34B4EBC2870 /* VSMPLchild1Interactor.h */,
-				C42CA1EDBF0BF9658E8CD1C0 /* VSMPLchild1Interactor.m */,
+				C60D5237D32C14720F3C378C /* VSMPLNewsTableInteractorInput.h */,
+				AF542CF09033710223421526 /* VSMPLNewsTableInteractorOutput.h */,
+				051E550315D2A34B4EBC2870 /* VSMPLNewsTableInteractor.h */,
+				C42CA1EDBF0BF9658E8CD1C0 /* VSMPLNewsTableInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -480,8 +545,20 @@
 				841E039D2015C1CD009F3252 /* VSMPLNewsManager.h */,
 				841E039E2015C1CD009F3252 /* VSMPLNewsManager.m */,
 				841E03A02015C2F6009F3252 /* VSMPLNewsFilterProtocol.h */,
+				841F8C12201B5CA4001C6056 /* VSMPLNewsFilter.h */,
+				841F8C13201B5CA4001C6056 /* VSMPLNewsFilter.m */,
+				841F8C15201B63BC001C6056 /* VSMPLNewsServiceAssembly.h */,
+				841F8C16201B63BC001C6056 /* VSMPLNewsServiceAssembly.m */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		849F4C552019ECE7006D8BF7 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				849F4C562019ED4E006D8BF7 /* NewsDetails.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		8720085080F0EF77C60B419C /* News */ = {
@@ -509,11 +586,23 @@
 		8D19623A0711E690074A158E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				B5CEA929F7D1D6BD50E53DEF /* VSMPLchild1ModuleInput.h */,
-				666D69778E189142A8448286 /* VSMPLchild1Presenter.h */,
-				0C93CE42D1041975CE879B47 /* VSMPLchild1Presenter.m */,
-				846BD3DD2017395E00A4ED6A /* VSMPLchild1ModuleOutput.h */,
+				B5CEA929F7D1D6BD50E53DEF /* VSMPLNewsTableModuleInput.h */,
+				666D69778E189142A8448286 /* VSMPLNewsTablePresenter.h */,
+				0C93CE42D1041975CE879B47 /* VSMPLNewsTablePresenter.m */,
+				846BD3DD2017395E00A4ED6A /* VSMPLNewsTableModuleOutput.h */,
 				8435C1F720177F5600A65264 /* VSMPLNewsListConfigurationProtocol.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A4B31362B60A702A3C3A9368 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4AD3818CE46670B6A690FAB7 /* VSMPLNewsDetailsModuleInput.h */,
+				0F19DF6495427911E2EC4143 /* VSMPLNewsDetailsPresenter.h */,
+				7F90A942C66221E18A5EB9DD /* VSMPLNewsDetailsPresenter.m */,
+				841F8C0F201B30BA001C6056 /* VSMPLNewsDetailsModuleOutput.h */,
+				841F8C11201B4E43001C6056 /* VSMPLNewsDetailsViewConfigurationProtocol.h */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -521,8 +610,8 @@
 		AE1B2C125F10A3B3D05D5FF3 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				846BD3CE201719F500A4ED6A /* VSMPLchild1Assembly.h */,
-				846BD3CD201719F500A4ED6A /* VSMPLchild1Assembly.m */,
+				846BD3CE201719F500A4ED6A /* VSMPLNewsTableAssembly.h */,
+				846BD3CD201719F500A4ED6A /* VSMPLNewsTableAssembly.m */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -535,6 +624,17 @@
 				B6DC7FA26CBAB0E86705BF7A /* VSMPLNewsFilterRouter.m */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		C57FCACE84CB23ABFF038DF5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C64BC600B37B116727134 /* VSMPLNewsDetailsInteractorInput.h */,
+				47E752D9151FD26C53B479C9 /* VSMPLNewsDetailsInteractorOutput.h */,
+				1C12F1E6F7EE2796CBA0D379 /* VSMPLNewsDetailsInteractor.h */,
+				7D4843C7C2426609A384A6EB /* VSMPLNewsDetailsInteractor.m */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		C97CBFC716C75D505AEC2A9F /* Presenter */ = {
@@ -561,9 +661,9 @@
 		DC230B27F36002B241A01DEB /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				8660D0429C01AB78185633C0 /* VSMPLchild1RouterInput.h */,
-				F7FE75C281CEE17E15BF69F5 /* VSMPLchild1Router.h */,
-				1689030DA5A3A3CF643AA01E /* VSMPLchild1Router.m */,
+				8660D0429C01AB78185633C0 /* VSMPLNewsTableRouterInput.h */,
+				F7FE75C281CEE17E15BF69F5 /* VSMPLNewsTableRouter.h */,
+				1689030DA5A3A3CF643AA01E /* VSMPLNewsTableRouter.m */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -576,6 +676,16 @@
 				75EF72B967663912A1EB15A5 /* VSMPLparentPresenter.m */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E25316E0A5CAED49031B0C1B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				282CD96E822B7D83C346D1BB /* VSMPLNewsDetailsRouterInput.h */,
+				E7A1F1DBE0B9FC59DBC48B30 /* VSMPLNewsDetailsRouter.h */,
+				1EF5CC68D3C5E0A644534F81 /* VSMPLNewsDetailsRouter.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		F6E9A3DFBDFD4888762A2DA1 /* View */ = {
@@ -650,6 +760,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849F4C572019ED4E006D8BF7 /* NewsDetails.storyboard in Resources */,
 				840752CB2015E14500015F1A /* news.json in Resources */,
 				8421CB4E200F6F5F00F7470A /* LaunchScreen.storyboard in Resources */,
 				8485D6B52010A2D500B4F84F /* News.storyboard in Resources */,
@@ -724,17 +835,18 @@
 				8421CB43200F6F5F00F7470A /* AppDelegate.m in Sources */,
 				6A655F9A6B4F60687947CBD6 /* VSMPLparentAssembly.m in Sources */,
 				2E96E516F1CE48EF3EF34682 /* VSMPLparentViewController.m in Sources */,
+				841F8C14201B5CA4001C6056 /* VSMPLNewsFilter.m in Sources */,
 				E0F720E1D35CC6745B8B3497 /* VSMPLparentPresenter.m in Sources */,
 				841E039F2015C1CD009F3252 /* VSMPLNewsManager.m in Sources */,
 				DC1FC7C82750AAFC7F912AFA /* VSMPLparentInteractor.m in Sources */,
 				BC971FD9859D595E4F928F94 /* VSMPLparentRouter.m in Sources */,
-				BB480EA5FDB4094C9D0AC02E /* VSMPLchild1TableViewController.m in Sources */,
-				B2361181F032DFFECBB2BB5C /* VSMPLchild1Presenter.m in Sources */,
-				8485D6BA2010C84A00B4F84F /* VSMPChild1TableViewCell.m in Sources */,
-				38484B05C5A63E9D6E5F698C /* VSMPLchild1Interactor.m in Sources */,
+				BB480EA5FDB4094C9D0AC02E /* VSMPLNewsTableViewController.m in Sources */,
+				B2361181F032DFFECBB2BB5C /* VSMPLNewsTablePresenter.m in Sources */,
+				8485D6BA2010C84A00B4F84F /* VSMPNewsTableViewCell.m in Sources */,
+				38484B05C5A63E9D6E5F698C /* VSMPLNewsTableInteractor.m in Sources */,
 				845CD0A22011EC2B00614BCA /* VSMPLDefaultNewsTableCellDecorator.m in Sources */,
 				8431443220122F3300940999 /* VSMPLDefaultNews.m in Sources */,
-				3D8806F89D3798783BEC5FE4 /* VSMPLchild1Router.m in Sources */,
+				3D8806F89D3798783BEC5FE4 /* VSMPLNewsTableRouter.m in Sources */,
 				4AAAC114DE69213558140EE7 /* VSMPLNewsFilterAssembly.m in Sources */,
 				846BD3D720171D8100A4ED6A /* VSMPLNewsStoryboardFactory.m in Sources */,
 				D62FBA1A69257A49A601F1E0 /* VSMPLNewsFilterViewController.m in Sources */,
@@ -742,11 +854,17 @@
 				735188405AE7D7AE965CCDC8 /* VSMPLNewsFilterInteractor.m in Sources */,
 				8CD9DA41E28FCD92BADB81DC /* VSMPLNewsFilterRouter.m in Sources */,
 				EEC4943C03BAA1CFC1DF7F8D /* VSMPLNewsAssembly.m in Sources */,
-				846BD3CF201719F500A4ED6A /* VSMPLchild1Assembly.m in Sources */,
+				841F8C17201B63BC001C6056 /* VSMPLNewsServiceAssembly.m in Sources */,
+				846BD3CF201719F500A4ED6A /* VSMPLNewsTableAssembly.m in Sources */,
 				8729A79D392E60D9CB6FFEA5 /* VSMPLNewsViewController.m in Sources */,
 				0F2E63260066D59389977A4D /* VSMPLNewsPresenter.m in Sources */,
 				8D79879FEBE3D0E969CF1205 /* VSMPLNewsInteractor.m in Sources */,
 				88AED46345F042F4CAE89814 /* VSMPLNewsRouter.m in Sources */,
+				D1B623483FC29E39A786DE93 /* VSMPLNewsDetailsAssembly.m in Sources */,
+				4DE7D2FCAF376F00824452A6 /* VSMPLNewsDetailsViewController.m in Sources */,
+				C85EB5E23DB1A17219634E8F /* VSMPLNewsDetailsPresenter.m in Sources */,
+				B60A10BC605BABC58008D6C4 /* VSMPLNewsDetailsInteractor.m in Sources */,
+				0B23214F33BF4835934D95ED /* VSMPLNewsDetailsRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

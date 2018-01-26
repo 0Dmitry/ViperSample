@@ -68,4 +68,8 @@ static CGFloat const kNewsFilterModuleHeight = 200.;
     [view didMoveToParentViewController:self];
 }
 
+-(void)configureNewsDetailsModuleView:(UIViewController *)view {
+    [self.navigationController pushViewController:view animated:true];
+}
+
 @end
