@@ -11,6 +11,9 @@
 
 @protocol VSMPLNewsDetailsModuleInput <RamblerViperModuleInput>
 
+
+@property(nonatomic, assign) NSNumber * newsId;
+
 /**
  @author dmitry
 
@@ -18,6 +21,5 @@
  */
 - (void)configureModule;
 
-- (void)updateWithNewsId:(NSInteger) newsId;
 
 @end

@@ -20,12 +20,19 @@
     // Стартовая конфигурация модуля, не привязанная к состоянию view
 }
 
+- (void) setEditing:(BOOL)editing {
+    [self.view setEditing:editing];
+}
+
 #pragma mark - Методы VSMPLchild1ViewOutput
 
 - (void)didTriggerViewReadyEvent {
     
 	[self.view setupInitialState];
+    
 }
+
+
 
 - (void)didTappedOnNewsTableCellWithRow:(NSInteger)row {
     id<VSMPLNews> news =  [_newsDatasource getNewsForRow:row];

@@ -15,5 +15,6 @@
 
 -(NSInteger) getNewsCountWithFilter:(id<VSMPLNewsFilterProtocol>) filter;
 -(id<VSMPLNews>) getNewsWithFilter:(id<VSMPLNewsFilterProtocol>) filter andRow:(NSInteger) row;
+-(void) setIsRead:(BOOL) isRead forNewsId:(NSInteger) newsId;
 
 @end

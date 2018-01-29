@@ -19,7 +19,12 @@
 #pragma mark - Методы жизненного цикла
 
 - (void)viewDidLoad {
+    
 	[super viewDidLoad];
+    
+    
+    
+    
 	[self.output didTriggerViewReadyEvent];
 }
 
@@ -29,6 +34,14 @@
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
 }
 
+-(void)setEditing:(BOOL)editing {
+    [self setEditing:editing animated:true];
+}
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.output.tableDatasource newsCount];
@@ -55,6 +68,11 @@
 -(void)newsFilterValuesDidChange {
     [self.tableView reloadData];
 }
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellEditingStyleNone;
+}
+
 
 
 

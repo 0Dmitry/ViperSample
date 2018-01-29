@@ -45,4 +45,10 @@
     }
 }
 
+@synthesize newsId;
+
+-(NSNumber *)newsId {
+    return nil;
+}
+
 @end

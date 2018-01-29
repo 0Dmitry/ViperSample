@@ -13,7 +13,7 @@
 
 
 @interface VSMPLNewsManager()
-@property (nonatomic) NSArray<id<VSMPLNews>> * allNews;
+@property (nonatomic, strong) NSArray<VSMPLDefaultNews *> * allNews;
 @end
 
 
@@ -32,32 +32,47 @@
         BOOL match = YES;
         
         if (filter.isRead != nil) {
-            match = evaluatedObject.isRead == [filter.isRead boolValue];
+            match = evaluatedObject.isRead == filter.isRead.boolValue;
         }
+        
+        if (filter.newsId != nil) {
+            match = evaluatedObject.newsId == filter.newsId.integerValue;
+        }
+        
+        
         return match;
     }]];
 }
 
--(NSArray<id<VSMPLNews>> *) loadNewsFromFile {
+-(void) loadNewsFromFile {
     NSURL * newsFileUrl = [[NSBundle.mainBundle resourceURL] URLByAppendingPathComponent:@"news.json"];
     
     NSData * newsData = [NSData dataWithContentsOfURL:newsFileUrl];
     
     NSArray * newsJSONArray = [NSJSONSerialization JSONObjectWithData:newsData options:0 error:nil];
     
-    NSArray * newsArray = [EKMapper arrayOfObjectsFromExternalRepresentation:newsJSONArray withMapping:[VSMPLDefaultNews objectMapping]];
-    
-    return newsArray;
+    _allNews = [EKMapper arrayOfObjectsFromExternalRepresentation:newsJSONArray withMapping:[VSMPLDefaultNews objectMapping]];
     
 }
 
 -(NSArray<id<VSMPLNews>> *) allNews {
     if (_allNews == nil) {
-        _allNews = [self loadNewsFromFile];
+        [self loadNewsFromFile];
     }
     
     return _allNews;
 }
+
+-(void) setIsRead:(BOOL) isRead forNewsId:(NSInteger) newsId {
+    for (VSMPLDefaultNews * news in _allNews) {
+        if (news.newsId == newsId) {
+            news.isRead = isRead;
+            break;
+        }
+    }
+}
+
+
 
 
 

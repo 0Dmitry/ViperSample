@@ -21,4 +21,6 @@
  */
 - (void)setupInitialState;
 
+-(void) setEditing:(BOOL) editing;
+
 @end

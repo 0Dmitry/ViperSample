@@ -15,9 +15,9 @@
 #import "VSMPLNews.h"
 
 
-@implementation VSMPLNewsDetailsPresenter {
-    NSNumber * _newsId;
-}
+@implementation VSMPLNewsDetailsPresenter
+
+@synthesize newsId = _newsId;
 
 #pragma mark - Методы VSMPLNewsDetailsModuleInput
 
@@ -25,22 +25,23 @@
     // Стартовая конфигурация модуля, не привязанная к состоянию view
 }
 
-- (void)updateWithNewsId:(NSInteger)newsId {
+- (void)updateView{
     
-    _newsId = @(newsId);
-    
-    UIViewController *  viewController = (UIViewController * ) self.view;
-    
-    if (viewController.isViewLoaded) {
-        id<VSMPLNews> news = [self.interactor getNewsWithId:newsId];
+    if (_newsId) {
+        UIViewController *  viewController = (UIViewController * ) self.view;
         
-        [self.view setNewsTitle:news.title];
-        [self.view setNewsText:news.text];
-        
-        NSString * dateStr = [NSDateFormatter localizedStringFromDate:news.date dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterNoStyle];
-        
-        [self.view setNewsDateTitle:dateStr];
+        if (viewController.isViewLoaded) {
+            id<VSMPLNews> news = [self.interactor getNewsWithId:_newsId.integerValue];
+            
+            [self.view setNewsTitle:news.title];
+            [self.view setNewsText:news.text];
+            
+            NSString * dateStr = [NSDateFormatter localizedStringFromDate:news.date dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterNoStyle];
+            
+            [self.view setNewsDateTitle:dateStr];
+        }
     }
+    
 }
 
 
@@ -48,6 +49,8 @@
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
+    [self.interactor setIsRead:YES forNewsId:_newsId.integerValue];
+    [self updateView];
 }
 
 -(void)setModuleOutput:(id<VSMPLNewsDetailsModuleOutput>)moduleOutput {
@@ -59,5 +62,7 @@
 }
 
 #pragma mark - Методы VSMPLNewsDetailsInteractorOutput
+
+
 
 @end

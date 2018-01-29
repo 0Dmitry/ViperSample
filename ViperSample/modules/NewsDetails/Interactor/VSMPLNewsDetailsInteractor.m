@@ -20,4 +20,8 @@
     return [_newsManager getNewsWithFilter:filter andRow:0];
 }
 
+-(void)setIsRead:(BOOL)isRead forNewsId:(NSInteger)newsId {
+    [_newsManager setIsRead:isRead forNewsId:newsId];
+}
+
 @end

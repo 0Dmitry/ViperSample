@@ -25,6 +25,8 @@ static CGFloat const kNewsFilterModuleHeight = 200.;
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    
+    //self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
 	[self.output didTriggerViewReadyEvent];
 }
@@ -33,6 +35,12 @@ static CGFloat const kNewsFilterModuleHeight = 200.;
 
 - (void)setupInitialState {
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+}
+
+
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    [self.output setEditing:editing];
 }
 
 

@@ -14,4 +14,7 @@
 
 -(id<VSMPLNews>) getNewsWithId:(NSInteger) newsId;
 
+-(void) setIsRead:(BOOL)isRead forNewsId:(NSInteger)newsId;
+
+
 @end

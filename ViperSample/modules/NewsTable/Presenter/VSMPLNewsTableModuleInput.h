@@ -19,4 +19,6 @@
  */
 - (void)configureModule;
 
+- (void) setEditing:(BOOL)editing;
+
 @end

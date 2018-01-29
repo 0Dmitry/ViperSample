@@ -31,6 +31,10 @@
 	[self.view setupInitialState];
 }
 
+- (void)setEditing:(BOOL)editing {
+    [newsListModule setEditing:editing];
+}
+
 #pragma mark - Методы VSMPLNewsInteractorOutput
 
 

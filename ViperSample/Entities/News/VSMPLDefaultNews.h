@@ -12,11 +12,11 @@
 
 @interface VSMPLDefaultNews : NSObject<VSMPLNews, EKMappingProtocol>
 
-@property(nonatomic,readonly,assign) NSInteger newsId;
-@property(nonatomic,readonly,copy) NSString * title;
-@property(nonatomic,readonly,copy) NSString * text;
-@property(nonatomic, readonly,strong) NSDate * date;
-@property(nonatomic, readonly, assign) BOOL isRead;
+@property(nonatomic, assign) NSInteger newsId;
+@property(nonatomic, copy) NSString * title;
+@property(nonatomic, copy) NSString * text;
+@property(nonatomic, strong) NSDate * date;
+@property(nonatomic, assign) BOOL isRead;
 
 
 -(instancetype) initWithNewsId:(NSInteger) newsId title:(NSString *)title text:(NSString *)text date:(NSDate *)date;

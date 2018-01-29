@@ -54,7 +54,7 @@
         //id<VSMPLNewsModuleInput> currentModuleInput = (id<VSMPLNewsModuleInput>)self.transitionHandler.moduleInput;
         //currentModuleInput.newsListModule = moduleInput;
         
-        [moduleInput updateWithNewsId:newsId];
+        moduleInput.newsId = @(newsId);
         
         //return outPut вызывает метод  - (void)setModuleOutput:(id<RamblerViperModuleOutput>)moduleOutput
         id<VSMPLNewsDetailsModuleOutput> outPut = (id<VSMPLNewsDetailsModuleOutput>)self.transitionHandler.moduleInput;

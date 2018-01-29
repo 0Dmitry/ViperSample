@@ -17,4 +17,6 @@
  */
 - (void)didTriggerViewReadyEvent;
 
+- (void) setEditing:(BOOL)editing;
+
 @end
